@@ -1,0 +1,28 @@
+<RCC>   
+    <qresource prefix="/image">        
+        <file alias="loding_0.png">image/loding_0.png</file>
+        <file alias="loding_1.png">image/loding_1.png</file>
+        <file alias="loding_2.png">image/loding_2.png</file>
+        <file alias="loding_3.png">image/loding_3.png</file>
+        <file alias="loding_4.png">image/loding_4.png</file>
+        <file alias="loding_5.png">image/loding_5.png</file>
+        <file alias="loding_6.png">image/loding_6.png</file>
+        <file alias="loding_7.png">image/loding_7.png</file>
+        <file alias="loding_8.png">image/loding_8.png</file>
+        <file alias="loding_9.png">image/loding_9.png</file>
+        <file alias="loding_10.png">image/loding_10.png</file>
+        <file alias="loding_11.png">image/loding_11.png</file>
+        <file alias="loding_12.png">image/loding_12.png</file>
+        <file alias="loding_13.png">image/loding_13.png</file>
+        <file alias="loding_14.png">image/loding_14.png</file>
+        <file alias="loding_15.png">image/loding_15.png</file>
+        <file alias="loding_16.png">image/loding_16.png</file>
+        <file alias="loding_17.png">image/loding_17.png</file>
+        <file alias="loding_18.png">image/loding_18.png</file>
+        <file alias="loding_19.png">image/loding_19.png</file>
+        <file alias="loding_20.png">image/loding_20.png</file>
+        <file alias="loding_21.png">image/loding_21.png</file>
+        <file alias="loding_22.png">image/loding_22.png</file>
+        <file alias="loding_23.png">image/loding_23.png</file>        
+    </qresource> 
+</RCC>

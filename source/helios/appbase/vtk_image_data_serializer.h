@@ -1,0 +1,28 @@
+/*******************************************************
+* All Copyright (C) by Sysbot Co. ltd (2022-2026)
+* author: zhucg
+* time:2025/12/25
+*******************************************************/
+#ifndef __vtk_image_data_serializer_h__
+#define __vtk_image_data_serializer_h__
+
+#include <QString>
+#include <vtkImageData.h>
+#include <vtkSmartPointer.h>
+#include "mirfak/basic/signal.hpp"
+#include "mirfak/mirfak_nsp.h"
+
+MIRFAK_NAMESPACE_BEGIN
+
+class VtkImageDataSerializer
+{
+public:
+	Signal<double, QString> Progress;
+	virtual bool writeFile(vtkImageData* data, const QString& filepath) = 0;
+	virtual vtkSmartPointer<vtkImageData> readFile(const QString& filepath) = 0;
+	virtual ~VtkImageDataSerializer() = default;
+};
+
+NAMESPACE_END
+
+#endif

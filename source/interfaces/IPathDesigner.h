@@ -1,0 +1,25 @@
+
+/*******************************************************
+* All Copyright (C) by Sysbot Co. ltd (2025-2026)
+* author: zhucg
+* time:2025/11/24
+*******************************************************/
+#ifndef __IPathDesigner_h__
+#define __IPathDesigner_h__
+
+#include <QObject>
+#include "mirfak/sprites/surgical_path_sprite.h"
+
+class IPathDesigner
+{
+public:
+    virtual void loadPaths(mirfak::SurgicalPathGroup& gp) = 0;
+    virtual mirfak::SurgicalPathGroup* getPathGroup() = 0;
+    virtual ~IPathDesigner() = default;    
+};
+
+#define IPATH_DESIGNER_IID "mirfak.plugin.IPathDesigner/1.0"
+
+Q_DECLARE_INTERFACE(IPathDesigner, IPATH_DESIGNER_IID)
+
+#endif

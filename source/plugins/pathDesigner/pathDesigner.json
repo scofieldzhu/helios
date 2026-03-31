@@ -1,0 +1,11 @@
+{  
+  "DisplayName":"Path Design",
+  "DisplayName.i18n":{
+    "zh_CN":"路径规划",
+    "en":"PathDesign"
+  },
+  "Vendor": "Acme Inc.",
+  "Version": "1.0.0",
+  "Capabilities": ["pathDesigner.en"],
+  "Description": "Surgery Path designer plugin (Qt5)"
+}

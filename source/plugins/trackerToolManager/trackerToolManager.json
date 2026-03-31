@@ -1,0 +1,11 @@
+{  
+  "DisplayName":"Tracker tool manager",
+  "DisplayName.i18n":{
+    "zh_CN":"定位工具管理",
+    "en":"Tracker tool management"
+  },
+  "Vendor": "Acme Inc.",
+  "Version": "1.0.0",
+  "Capabilities": ["trackerToolManager.en"],
+  "Description": "Tracker tool manager plugin (Qt5)"
+}

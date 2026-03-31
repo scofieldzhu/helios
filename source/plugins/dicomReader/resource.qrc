@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/translations">
+        <file alias="DICOMReader_en.qm">translations/DICOMReader_en.qm</file>
+        <file alias="DICOMReader_zh_CN.qm">translations/DICOMReader_zh_CN.qm</file>
+    </qresource>
+</RCC>

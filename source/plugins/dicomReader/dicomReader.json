@@ -1,0 +1,12 @@
+{  
+  "DisplayName":"DICOM Reader",
+  "DisplayName.i18n":{
+    "zh_CN":"DICOM获取器",
+    "en":"DICOM Reader"
+  },
+  "Vendor": "Sysbot Inc.",
+  "Version": "1.0.0",
+  "Author":  "zhucg",
+  "Capabilities": ["dicomReader.en"],
+  "Description": "DICOM reader plugin"
+}
