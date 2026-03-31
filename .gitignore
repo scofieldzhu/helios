@@ -54,7 +54,6 @@
 
 #ignore directories
 .vs
-.vscode
 ./plugins
 Debug
 Release
