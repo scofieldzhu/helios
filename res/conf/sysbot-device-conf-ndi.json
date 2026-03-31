@@ -1,0 +1,40 @@
+{
+	"Tracker" :
+	{
+		"Model": "NDIVega",
+		"IpAddr" : "10.10.10.9",
+		"Port" : 8765,
+		"RomFileDir" : "romFile/NDI",
+		"Tools" : 
+		[
+			{
+				"Type" : "Probe",
+				"Name" : "SBT001_Probe",
+				"RomFilename" : "probe.rom",
+				"VirtualPort" : 8,
+				"TipPoint" : "150.07, -11.87, 32.51"				
+			},
+			{
+				"Type" : "Referencer",
+				"Name" : "SBT001_Reference",
+				"VirtualPort" : 9,
+				"RomFilename" : "P122051601.rom"
+			},
+			{
+				"Type" : "Locator",
+				"Name" : "SBT001_Handpiece",
+				"VirtualPort" : 10,
+				"RomFilename" : "D122051601.rom",
+				"TipPoint" : "41.952, -0.318, 166.208",
+				"LongTipPoint" : "41.680, -0.281, 156.329",
+				"CalibDrill" : "short ball seed drill",
+				"ModelFilePath" : "handpiece/handpiece.stl",
+				"NaviModelFilePath" : "handpiece/handpiece.stl"
+			}			
+		]		
+	},	
+	"Robot" : 
+	{
+		"IpAddr" : "10.10.10.8"
+	}
+}

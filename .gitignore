@@ -6,21 +6,19 @@
 *.lo
 *.o
 *.obj
+*.ilk
+*.exp
+*.tlog
+*.idb
+*.log
 
 # Precompiled Headers
 *.gch
 *.pch
 
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
 
 # Fortran module files
 *.mod
@@ -30,12 +28,39 @@
 *.lai
 *.la
 *.a
-*.lib
 
 # Executables
 *.exe
 *.out
 *.app
+*.db
+*.user
+*.dat
 
-# debug information files
-*.dwo
+#Temp files
+*.VC.opendb
+*.VC.db
+*.suo
+*.pdb
+
+#ignore files
+*.licenseheader
+*.vcxproj.user
+
+#Debugger files
+
+*.mha
+*.qm
+
+#ignore directories
+.vs
+.vscode
+./plugins
+Debug
+Release
+RelWithDebInfo
+out
+bin
+build
+install
+TRD_PARTY

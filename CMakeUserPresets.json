@@ -1,0 +1,36 @@
+{
+  "version": 6,
+  "configurePresets": [
+    {
+      "name": "local-vcpkg",
+      "hidden": true,
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "E:/Code/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "VCPKG_TARGET_TRIPLET": "x64-windows",
+        "CMAKE_PREFIX_PATH": "D:/Qt/Qt5.14.2/5.14.2/msvc2017_64/lib/cmake/Qt5;C:/Program Files/VTK/lib/cmake/vtk-9.3"
+      },
+      "warnings": {
+        "dev": false
+      }
+    },
+    {
+      "name": "vs2022-local",
+      "inherits": [
+        "vs2022",
+        "local-vcpkg"
+      ]
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "build-debug-local",
+      "configurePreset": "vs2022-local",
+      "configuration": "Debug"
+    },
+    {
+      "name": "build-release-local",
+      "configurePreset": "vs2022-local",
+      "configuration": "Release"
+    }
+  ]
+}
