@@ -1,6 +1,5 @@
 /*******************************************************
-* All Copyright (C) by Sysbot Co. ltd (2022-2024)
-* author: zhucg
+* author: scofieldzhu
 * time:2025/9/2
 *******************************************************/
 #ifndef __change_thresold_range_editor_h__

@@ -1,5 +1,4 @@
 ﻿/*******************************************************
-* All Copyright (C) by Sysbot Co. ltd (2022-2023)
 *******************************************************/
 #include "task_progressor_controller.h"
 #define WIN32_LEAN_AND_MEAN

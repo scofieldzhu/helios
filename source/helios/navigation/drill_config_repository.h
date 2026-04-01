@@ -1,6 +1,5 @@
 /*******************************************************
-* All Copyright (C) by Sysbot Co. ltd (2022-2026)
-* author: zhucg
+* author: scofieldzhu
 * time:2025/12/23
 *******************************************************/
 #ifndef __drill_config_repository_h__

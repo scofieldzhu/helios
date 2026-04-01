@@ -1,6 +1,5 @@
 /*******************************************************
-* All Copyright (C) by Sysbot Co. ltd (2024-2025)
-* author: zhucg
+* author: scofieldzhu
 * time:2025/10/30
 *******************************************************/
 #ifndef __point_move_tool_sprite_h__

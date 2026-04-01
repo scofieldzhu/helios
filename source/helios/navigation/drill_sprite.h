@@ -1,6 +1,5 @@
 /*******************************************************
-* All Copyright (C) by Sysbot Co. ltd (2024-2025)
-* author: zhucg
+* author: scofieldzhu
 * time:2025/9/12
 *******************************************************/
 #ifndef __drill_sprite_h__

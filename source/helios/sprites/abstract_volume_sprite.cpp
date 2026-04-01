@@ -1,6 +1,5 @@
 /*******************************************************
-* All Copyright (C) by Sysbot Co. ltd (2022-2024)
-* author: zhucg
+* author: scofieldzhu
 * time:2025/8/26
 *******************************************************/
 #include "abstract_volume_sprite.h"

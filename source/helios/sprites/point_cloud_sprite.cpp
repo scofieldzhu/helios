@@ -1,6 +1,5 @@
 /*******************************************************
-* All Copyright (C) by Sysbot Co. ltd (2022-2024)
-* author: zhucg
+* author: scofieldzhu
 * time:2025/5/15
 *******************************************************/
 #include "point_cloud_sprite.h"

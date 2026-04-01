@@ -1,6 +1,5 @@
 /*******************************************************
-* All Copyright (C) by Sysbot Co. ltd (2022-2026)
-* author: zhucg
+* author: scofieldzhu
 * time:2026/2/3
 *******************************************************/
 #include "scene_repository.h"

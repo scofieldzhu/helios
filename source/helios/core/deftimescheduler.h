@@ -1,5 +1,4 @@
 /*******************************************************
-* All Copyright (C) by Sysbot Co. ltd (2022-2023)
 *******************************************************/
 #ifndef __DEFTIMESCHEDULER_H__
 #define __DEFTIMESCHEDULER_H__

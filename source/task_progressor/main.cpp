@@ -1,6 +1,5 @@
 ﻿/*******************************************************
-* All Copyright (C) by Sysbot Co. ltd (2022-2026)
-* author: zhucg
+* author: scofieldzhu
 * time:2026/3/4
 *******************************************************/
 #include "task_progressor_view.h"
