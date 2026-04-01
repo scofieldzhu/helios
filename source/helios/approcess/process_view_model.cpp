@@ -6,7 +6,7 @@
 #include "process_view_model.h"
 #include "process_session.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 ProcessViewModel::ProcessViewModel(QObject* p, ProcessSession& s)
 	:QObject(p),
@@ -20,12 +20,12 @@ ProcessViewModel::~ProcessViewModel()
 
 }
 
-mirfak::ProcessIIDType ProcessViewModel::processIID () const
+helios::ProcessIIDType ProcessViewModel::processIID () const
 {
 	return process_session_.processIID();
 }
 
-mirfak::ProcessSessionContext* ProcessViewModel::processSessionContext() const
+helios::ProcessSessionContext* ProcessViewModel::processSessionContext() const
 {
 	return process_session_.localContext<ProcessSessionContext>();
 }

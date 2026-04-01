@@ -9,10 +9,10 @@
 #include <QString>
 #include <vtkImageData.h>
 #include <vtkSmartPointer.h>
-#include "mirfak/basic/signal.hpp"
-#include "mirfak/mirfak_nsp.h"
+#include "helios/basic/signal.hpp"
+#include "helios/helios_nsp.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class VtkImageDataSerializer
 {

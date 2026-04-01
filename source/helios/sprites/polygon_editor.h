@@ -6,16 +6,16 @@
 #ifndef __polygon_editor_h__
 #define __polygon_editor_h__
 
-#include "mirfak/core/editor.h"
-#include "mirfak/sprites/mirfak_sprites_export.h"
+#include "helios/core/editor.h"
+#include "helios/sprites/helios_sprites_export.h"
 
 class vtkProp;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class PolygonSprite;
 
-class MIRFAK_SPRITES_API PolygonEditor : public Editor
+class HELIOS_SPRITES_API PolygonEditor : public Editor
 {
     vtkTypeMacro(PolygonEditor, Editor)
 

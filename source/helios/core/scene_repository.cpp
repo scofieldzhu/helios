@@ -7,7 +7,7 @@
 #include <vtkRenderer.h>
 #include "scene.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 SceneRepository::SceneRepository()
 {

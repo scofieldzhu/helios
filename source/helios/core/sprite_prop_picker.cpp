@@ -10,7 +10,7 @@
 #include "sprite.h"
 #include "scene.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 namespace {
     Sprite* FindTargetSprite(Scene& scene, vtkProp* prop)

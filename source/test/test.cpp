@@ -4,11 +4,11 @@
 #include <vtkImageData.h>
 #include <vtkMatrix3x3.h>
 #include <vtkMetaImageReader.h>
-#include "mirfak/basic/mirfak_basic_typedef.h"
-#include "mirfak/basic/signal.hpp"
-#include "mirfak/basic/log_service.h"
+#include "helios/basic/helios_basic_typedef.h"
+#include "helios/basic/signal.hpp"
+#include "helios/basic/log_service.h"
 #include "main_widget.h"
-using namespace mirfak;
+using namespace helios;
 
 vtkSmartPointer<vtkImageData> MakeDefaultVolume()
 {
@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
     auto default_image = MakeDefaultVolume();
     QApplication app(argc, argv);
     QTranslator translator;
-    if(translator.load("mirfak_Demo_zh_CN.qm", "./res/conf/lang")){
+    if(translator.load("helios_Demo_zh_CN.qm", "./res/conf/lang")){
         app.installTranslator(&translator);
     }
     MainWidget mw;

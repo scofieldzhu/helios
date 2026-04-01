@@ -38,7 +38,7 @@ public:
     virtual ~IDICOMReader() = default;    
 };
 
-#define IDICOM_READER_IID "mirfak.plugin.IDICOMReader/1.0"
+#define IDICOM_READER_IID "helios.plugin.IDICOMReader/1.0"
 
 Q_DECLARE_INTERFACE(IDICOMReader, IDICOM_READER_IID)
 

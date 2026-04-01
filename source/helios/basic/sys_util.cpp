@@ -17,7 +17,7 @@
 
 using local_clock = std::chrono::steady_clock;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 double GetUTCTime()
 {

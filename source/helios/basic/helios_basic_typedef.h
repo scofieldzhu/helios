@@ -3,17 +3,17 @@
 * author: zhucg
 * time:2025/1/24
 *******************************************************/
-#ifndef __mirfak_basic_typedef_h__
-#define __mirfak_basic_typedef_h__
+#ifndef __helios_basic_typedef_h__
+#define __helios_basic_typedef_h__
 
-#include "mirfak/basic/xy.hpp"
-#include "mirfak/basic/xyz.hpp"
-#include "mirfak/basic/color.h"
-#include "mirfak/basic/line.h"
-#include "mirfak/basic/plane.h"
-#include "mirfak/basic/bound_plane.h"
+#include "helios/basic/xy.hpp"
+#include "helios/basic/xyz.hpp"
+#include "helios/basic/color.h"
+#include "helios/basic/line.h"
+#include "helios/basic/plane.h"
+#include "helios/basic/bound_plane.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 using Arry6d = std::array<double, 6>;
 using Arry5d = std::array<double, 5>;

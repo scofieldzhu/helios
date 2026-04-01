@@ -6,7 +6,7 @@
 #include "log_service.h"
 #include <vtkObject.h>
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 namespace{
 	std::shared_ptr<spdlog::logger> stLogger;

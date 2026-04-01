@@ -4,9 +4,9 @@
 * time:2025/4/18
 *******************************************************/
 #include "session.h"
-#include "mirfak/basic/log_service.h"
+#include "helios/basic/log_service.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 Session::Session(Session* p)
 	:parent_(p)

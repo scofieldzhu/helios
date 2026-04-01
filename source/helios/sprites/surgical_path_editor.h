@@ -6,15 +6,15 @@
 #ifndef __surgical_path_editor_h__
 #define __surgical_path_editor_h__
 
-#include "mirfak/core/editor.h"
-#include "mirfak/sprites/surgical_path_sprite.h"
+#include "helios/core/editor.h"
+#include "helios/sprites/surgical_path_sprite.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class SphereSprite;
 class AbstractVolumeSprite;
 
-class MIRFAK_SPRITES_API SurgicalPathEditor : public Editor
+class HELIOS_SPRITES_API SurgicalPathEditor : public Editor
 {
     vtkTypeMacro(SurgicalPathEditor, Editor)
 public:

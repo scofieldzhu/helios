@@ -6,6 +6,6 @@
 #ifndef __version_h__
 #define __version_h__
 
-#define MIRFAK_VERSION "1.0.0"
+#define HELIOS_VERSION "1.0.0"
 
 #endif

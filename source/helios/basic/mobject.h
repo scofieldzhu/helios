@@ -6,10 +6,10 @@
 #ifndef __mobject_h__
 #define __mobject_h__
 
-#include "mirfak/mirfak_nsp.h"
+#include "helios/helios_nsp.h"
 #include <cstring>
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class MObject
 {

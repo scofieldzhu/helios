@@ -10,15 +10,15 @@
 #include <vtkTracker.h>
 #include <vtkSmartPointer.h>
 #include <vtkTransform.h>
-#include "mirfak/navigation/tracker_config.h"
-#include "mirfak/navigation/tracker_tracking_data.h"
-#include "mirfak/navigation/mirfak_navigation_export.h"
+#include "helios/navigation/tracker_config.h"
+#include "helios/navigation/tracker_tracking_data.h"
+#include "helios/navigation/helios_navigation_export.h"
 
 class QTimer;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_NAVIGATION_API Tracker : public QObject
+class HELIOS_NAVIGATION_API Tracker : public QObject
 {
     Q_OBJECT
 

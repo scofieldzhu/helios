@@ -7,12 +7,12 @@
 #define __processViewModel_h__
 
 #include <QObject>
-#include "mirfak/approcess/mirfak_approcess_export.h"
-#include "mirfak/approcess/mirfak_approcess_typedef.h"
+#include "helios/approcess/helios_approcess_export.h"
+#include "helios/approcess/helios_approcess_typedef.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_APPROCESS_API ProcessViewModel : public QObject
+class HELIOS_APPROCESS_API ProcessViewModel : public QObject
 {
 	Q_OBJECT
 

@@ -6,10 +6,10 @@
 #include "resource_util.h"
 #include <QFile>
 #include <QWidget>
-#include "mirfak/appbase/mirfak_appbase_typedef.h"
-#include "mirfak/basic/log_service.h"
+#include "helios/appbase/helios_appbase_typedef.h"
+#include "helios/basic/log_service.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 namespace{
 	QString ReadSingleStyleSheetFile(const QString& filepath)
@@ -27,7 +27,7 @@ void ApplyWidgetStyleSheet(QWidget* w, const QString& filepath)
 	QString stylesheet_str = ReadSingleStyleSheetFile(filepath);
 	if(w && !stylesheet_str.isEmpty()){
 		w->setStyleSheet(stylesheet_str);
-		//SPDLOG_DEBUG("filepath:{} str:{}", mirfak::QStrToLogStr(filepath), mirfak::QStrToLogStr(stylesheet_str));
+		//SPDLOG_DEBUG("filepath:{} str:{}", helios::QStrToLogStr(filepath), helios::QStrToLogStr(stylesheet_str));
 	}	
 }
 

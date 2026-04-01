@@ -16,9 +16,9 @@
 #include <vtkCellPicker.h>
 #include <vtkProp3DCollection.h>
 #include <vtkAssemblyPath.h>
-#include "mirfak/core/scene.h"
-#include "mirfak/sprites/sphere_sprite.h"
-#include "mirfak/basic/log_service.h"
+#include "helios/core/scene.h"
+#include "helios/sprites/sphere_sprite.h"
+#include "helios/basic/log_service.h"
 
 namespace {
     constexpr double kDefaultConeLength = 2.0;
@@ -26,7 +26,7 @@ namespace {
     constexpr double kDefaultPathLength = kDefaultConeLength + kDefaultCylinderLength;
 }
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 SurgicalPathSprite::SurgicalPathSprite(double radius)
     :cylinder_source_(vtkSmartPointer<vtkCylinderSource>::New()),

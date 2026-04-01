@@ -5,7 +5,7 @@
 *******************************************************/
 #include "bound_plane.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 BoundPlane::BoundPlane(const Point3& o, const Point3& p1, const Point3& p2)
     :origin_(o),

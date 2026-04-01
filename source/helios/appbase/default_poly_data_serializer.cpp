@@ -10,10 +10,10 @@
 #include <vtkXMLPolyDataReader.h>
 #include <vtkNew.h>
 #include <vtkCallbackCommand.h>
-#include "mirfak/basic/log_service.h"
-#include "mirfak/appbase/mirfak_appbase_typedef.h"
+#include "helios/basic/log_service.h"
+#include "helios/appbase/helios_appbase_typedef.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 bool DefaultPolyDataSerializer::writeFile(vtkPolyData* data, const QString& filepath)
 {

@@ -6,9 +6,9 @@
 #include "label_sprite.h"
 #include <vtkTextActor.h>
 #include <vtkTextProperty.h>
-#include "mirfak/basic/log_service.h"
+#include "helios/basic/log_service.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 LabelSprite::LabelSprite()
     :text_actor_(vtkSmartPointer<vtkTextActor>::New())

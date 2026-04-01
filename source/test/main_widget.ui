@@ -16,7 +16,7 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
-     <widget class="mirfak::RenderWidget" name="render_widget"/>
+     <widget class="helios::RenderWidget" name="render_widget"/>
     </item>
     <item>
      <widget class="QWidget" name="ctrl_panel" native="true">
@@ -336,9 +336,9 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>mirfak::RenderWidget</class>
+   <class>helios::RenderWidget</class>
    <extends>QOpenGLWidget</extends>
-   <header>mirfak/core/render_widget.h</header>
+   <header>helios/core/render_widget.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

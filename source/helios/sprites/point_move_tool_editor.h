@@ -6,15 +6,15 @@
 #ifndef __point_move_tool_editor_h__
 #define __point_move_tool_editor_h__
 
-#include "mirfak/core/editor.h"
-#include "mirfak/sprites/point_move_tool_sprite.h"
+#include "helios/core/editor.h"
+#include "helios/sprites/point_move_tool_sprite.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class AbstractVolumeSprite;
 class SphereSprite;
 
-class MIRFAK_SPRITES_API PointMoveToolEditor : public Editor
+class HELIOS_SPRITES_API PointMoveToolEditor : public Editor
 {
 	vtkTypeMacro(PointMoveToolEditor, Editor)
 public:

@@ -6,14 +6,14 @@
 #ifndef __sphere_sprite_h__
 #define __sphere_sprite_h__
 
-#include "mirfak/core/sprite.h"
-#include "mirfak/sprites/mirfak_sprites_export.h"
+#include "helios/core/sprite.h"
+#include "helios/sprites/helios_sprites_export.h"
 
 class vtkSphereSource;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_SPRITES_API SphereSprite : public Sprite
+class HELIOS_SPRITES_API SphereSprite : public Sprite
 {
     SPRITE_DECL(SphereSprite, Sprite)
 public:

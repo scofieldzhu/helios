@@ -7,9 +7,9 @@
 #define __dicom_meta_data_h__
 
 #include <string>
-#include "mirfak/mirfak_nsp.h"
+#include "helios/helios_nsp.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 struct DICOMMetaData
 {

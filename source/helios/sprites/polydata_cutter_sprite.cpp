@@ -13,7 +13,7 @@
 #include <vtkPlane.h>
 #include <vtkTransform.h>
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 PolyDataCutterSprite::PolyDataCutterSprite()
     :cutter_(vtkSmartPointer<vtkCutter>::New()),
     clean_filter_(vtkSmartPointer<vtkCleanPolyData>::New()),

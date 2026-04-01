@@ -8,11 +8,11 @@
 
 #include <memory>
 #include <QObject>
-#include "mirfak/mirfak_nsp.h"
+#include "helios/helios_nsp.h"
 
 class QWidget;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class Session;
 class ProcessSession;
@@ -30,8 +30,8 @@ public:
 
 NAMESPACE_END
 
-#define IProcessFactory_IID "com.mirfak.plugin.IProcessFactory/1.0"
+#define IProcessFactory_IID "com.helios.plugin.IProcessFactory/1.0"
 
-Q_DECLARE_INTERFACE(mirfak::IProcessFactory, IProcessFactory_IID)
+Q_DECLARE_INTERFACE(helios::IProcessFactory, IProcessFactory_IID)
 
 #endif

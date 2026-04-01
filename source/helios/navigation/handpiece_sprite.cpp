@@ -12,11 +12,11 @@
 #include <vtkSTLReader.h>
 #include <vtkTrackerTool.h>
 #include <vtkLandmarkTransform.h>
-#include "mirfak/basic/log_service.h"
+#include "helios/basic/log_service.h"
 #include "device_administrator.h"
 #include "drill_config_repository.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 extern std::string QStrToStd(const QString& qstr);
 

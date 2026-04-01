@@ -12,10 +12,10 @@
 #include "path_util.h"
 #include "default_image_data_serializer.h"
 #include "default_poly_data_serializer.h"
-#include "mirfak/basic/log_service.h"
+#include "helios/basic/log_service.h"
 #include "model_element_serializer.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 namespace 
 {    

@@ -6,17 +6,17 @@
 #ifndef __process_session_h__
 #define __process_session_h__
 
-#include "mirfak/appbase/session.h"
-#include "mirfak/approcess/process_session_context.h"
-#include "mirfak/approcess/mirfak_approcess_export.h"
+#include "helios/appbase/session.h"
+#include "helios/approcess/process_session_context.h"
+#include "helios/approcess/helios_approcess_export.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class MetaDataSerializer;
 
-class MIRFAK_APPROCESS_API ProcessSession : public mirfak::Session
+class HELIOS_APPROCESS_API ProcessSession : public helios::Session
 {
-	SESSION_DECL(ProcessSession, mirfak::Session)
+	SESSION_DECL(ProcessSession, helios::Session)
 public:	
 	ProcessSessionContext* processContext()const;
 	virtual ProcessIIDType processIID()const = 0;

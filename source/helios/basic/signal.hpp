@@ -6,13 +6,13 @@
 #ifndef __signal_hpp__
 #define __signal_hpp__
 
-#include "mirfak/mirfak_nsp.h"
+#include "helios/helios_nsp.h"
 #include <map>
 #include <mutex>
 #include <atomic>
 #include <functional>
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 template <class ... Ts>
 class Signal

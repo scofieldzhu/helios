@@ -9,7 +9,7 @@
 #include "timescheduler.h"
 #include "visual_export.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class VISUAL_API DefTimeScheduler : public TimeScheduler
 {

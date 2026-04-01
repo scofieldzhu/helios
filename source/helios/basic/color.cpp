@@ -10,7 +10,7 @@
 #include <sstream>
 #include "str_util.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 const Color Color::Black("#000000");
 const Color Color::White("#FFFFFF");

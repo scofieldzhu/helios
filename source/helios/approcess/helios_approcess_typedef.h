@@ -3,12 +3,12 @@
 * author: zhucg
 * time:2026/2/24
 *******************************************************/
-#ifndef __mirfak_approcess_typedef_h__
-#define __mirfak_approcess_typedef_h__
+#ifndef __helios_approcess_typedef_h__
+#define __helios_approcess_typedef_h__
 
-#include "mirfak/appbase/mirfak_appbase_typedef.h"
+#include "helios/appbase/helios_appbase_typedef.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 using ProcessIIDType = QString;
 

@@ -12,7 +12,7 @@
 #include "scene_repository.h"
 #include "camera_interactor_style.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 namespace{
     constexpr int kBkgRenLayer = 0;

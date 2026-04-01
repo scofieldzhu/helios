@@ -6,11 +6,11 @@
 #include "image_data_util.h"
 #include <cassert>
 #include <vtkImageData.h>
-#include "mirfak/basic/line.h"
+#include "helios/basic/line.h"
 
 #include <vtkMetaImageReader.h>
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 Point3 ImageToWorld(vtkImageData* data, const Point3i& image_point)
 {

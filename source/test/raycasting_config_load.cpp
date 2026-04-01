@@ -9,9 +9,9 @@
 #include <QJsonArray>
 #include <QFileInfo>
 #include <QFile>
-#include "mirfak/basic/log_service.h"
+#include "helios/basic/log_service.h"
 
-using namespace mirfak;
+using namespace helios;
 
 bool ParseCtrlPointConfigTag(QJsonArray arry, CtrlPointConf& result)
 {

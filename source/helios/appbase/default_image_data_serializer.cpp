@@ -10,10 +10,10 @@
 #include <vtkXMLImageDataWriter.h>
 #include <vtkNew.h>
 #include <vtkCallbackCommand.h>
-#include "mirfak/basic/log_service.h"
+#include "helios/basic/log_service.h"
 #include "log_misc.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 bool DefaultImageDataSerializer::writeFile(vtkImageData* data, const QString& filepath)
 {

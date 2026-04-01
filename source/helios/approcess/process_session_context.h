@@ -6,15 +6,15 @@
 #ifndef __process_session_context_h__
 #define __process_session_context_h__
 
-#include "mirfak/core/scene_repository.h"
-#include "mirfak/appbase/session_context.h"
-#include "mirfak/appbase/progress_control_view.h"
-#include "mirfak/approcess/render_service.h"
-#include "mirfak/approcess/mirfak_approcess_typedef.h"
+#include "helios/core/scene_repository.h"
+#include "helios/appbase/session_context.h"
+#include "helios/appbase/progress_control_view.h"
+#include "helios/approcess/render_service.h"
+#include "helios/approcess/helios_approcess_typedef.h"
 
 class vtkImageData;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class ProcessSessionContext : public SessionContext
 {

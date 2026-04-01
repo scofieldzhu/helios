@@ -7,9 +7,9 @@
 #define __drill_config_h__
 
 #include <QString>
-#include "mirfak/mirfak_nsp.h"
+#include "helios/helios_nsp.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 struct DrillConfig
 {

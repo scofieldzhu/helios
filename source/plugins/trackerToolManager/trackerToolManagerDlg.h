@@ -7,10 +7,10 @@
 #define __trackerToolManagerDlg_h__
 
 #include "ui_trackerToolManagerDlg.h"
-#include "mirfak/core/render_widget.h"
-#include "mirfak/navigation/handpiece_sprite.h"
+#include "helios/core/render_widget.h"
+#include "helios/navigation/handpiece_sprite.h"
 
-namespace mirfak{
+namespace helios{
 	class OrthoPlanesSprite;
 }
 
@@ -20,7 +20,7 @@ class TrackerToolManagerDlg : public QWidget
 {
 	Q_OBJECT
 public:
-	void setRenderWidget(mirfak::RenderWidget *sw);
+	void setRenderWidget(helios::RenderWidget *sw);
 	TrackerToolManagerDlg(QWidget* p);
 	~TrackerToolManagerDlg();
 
@@ -37,12 +37,12 @@ private slots:
     
 private:
 	Ui::Form ui_;
-    mirfak::RenderWidget* render_widget_ = nullptr;
-    mirfak::Scene* axial_scene_ = nullptr;
-	mirfak::Scene* coronal_scene_ = nullptr;
-	mirfak::Scene* sagittal_scene_ = nullptr;
-	mirfak::Scene* ortho_scene_ = nullptr;
-    std::unique_ptr<mirfak::HandpieceSprite> handpiece_;
+    helios::RenderWidget* render_widget_ = nullptr;
+    helios::Scene* axial_scene_ = nullptr;
+	helios::Scene* coronal_scene_ = nullptr;
+	helios::Scene* sagittal_scene_ = nullptr;
+	helios::Scene* ortho_scene_ = nullptr;
+    std::unique_ptr<helios::HandpieceSprite> handpiece_;
     QTimer* drill_rotating_timer_;
 };
 

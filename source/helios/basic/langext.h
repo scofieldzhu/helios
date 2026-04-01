@@ -10,9 +10,9 @@
 #include <concepts>
 #include <numbers>
 #include <type_traits>
-#include "mirfak/mirfak_nsp.h"
+#include "helios/helios_nsp.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 constexpr float kZeroTolerance = 1e-5f;
 

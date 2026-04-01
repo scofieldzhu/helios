@@ -6,11 +6,11 @@
 #ifndef __plane_intersection_line_sprite_h__
 #define __plane_intersection_line_sprite_h__
 
-#include "mirfak/sprites/plane_cutter_sprite.h"
+#include "helios/sprites/plane_cutter_sprite.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_SPRITES_API PlaneIntersectionLineSprite : public Sprite
+class HELIOS_SPRITES_API PlaneIntersectionLineSprite : public Sprite
 {
     SPRITE_DECL(PlaneIntersectionLineSprite, Sprite)
 public:

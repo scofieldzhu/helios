@@ -3,15 +3,15 @@
 * author: zhucg
 * time:2025/2/9
 *******************************************************/
-#ifndef __mirfak_core_typedef_h__
-#define __mirfak_core_typedef_h__
+#ifndef __helios_core_typedef_h__
+#define __helios_core_typedef_h__
 
 #include <memory>
 #include <functional>
-#include "mirfak/basic/mirfak_basic_typedef.h"
-#include "mirfak/core/core_pre_decl.h"
+#include "helios/basic/helios_basic_typedef.h"
+#include "helios/core/core_pre_decl.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 using SpriteSPtr = std::shared_ptr<Sprite>;
 using SpriteSList = std::vector<SpriteSPtr>;

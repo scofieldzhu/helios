@@ -3,12 +3,12 @@
 * author: zhucg
 * time:2025/4/8
 *******************************************************/
-#ifndef __mirfak_navigation_typedef_h__
-#define __mirfak_navigation_typedef_h__
+#ifndef __helios_navigation_typedef_h__
+#define __helios_navigation_typedef_h__
 
-#include "mirfak/core/mirfak_core_typedef.h"
+#include "helios/core/helios_core_typedef.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 using QStringOpt = std::optional<QString>;
 using Pose6d = std::array<double, 6>;

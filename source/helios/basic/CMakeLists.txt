@@ -3,8 +3,8 @@ set(COMPONENT_NAME "basic")
 set(LOCAL_PROJ_NAME "${PROJ_NAME}_${COMPONENT_NAME}")
 
 set(EXPORT_FILENAME_LIST
-    "mirfak_basic_export.h"
-    "mirfak_basic_typedef.h"
+    "helios_basic_export.h"
+    "helios_basic_typedef.h"
     "xy.hpp"    
     "xyz.hpp"    
     "langext.h"
@@ -36,7 +36,7 @@ set(SOURCE_FILENAMES
 add_library(${LOCAL_PROJ_NAME} SHARED ${SOURCE_FILENAMES} ${EXPORT_FILENAME_LIST})
 
 target_compile_definitions(${LOCAL_PROJ_NAME} PRIVATE 
-    MIRFAK_BASIC_EXPORTS
+    HELIOS_BASIC_EXPORTS
     _WIN32
 )
 
@@ -58,7 +58,7 @@ set_target_properties(${LOCAL_PROJ_NAME} PROPERTIES
 )  
 
 install(TARGETS ${LOCAL_PROJ_NAME}
-    EXPORT mirfak-targets
+    EXPORT helios-targets
     RUNTIME DESTINATION bin
     LIBRARY DESTINATION lib
     ARCHIVE DESTINATION lib
@@ -66,7 +66,7 @@ install(TARGETS ${LOCAL_PROJ_NAME}
 )
 
 install(FILES ${EXPORT_FILENAME_LIST}
-    DESTINATION "include/mirfak/${COMPONENT_NAME}"
+    DESTINATION "include/helios/${COMPONENT_NAME}"
 )
 
 install(FILES

@@ -6,11 +6,11 @@
 #ifndef __pick_info_h__
 #define __pick_info_h__
 
-#include "mirfak/core/mirfak_core_typedef.h"
+#include "helios/core/helios_core_typedef.h"
 
 class vtkProp;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 struct PickInfo
 {

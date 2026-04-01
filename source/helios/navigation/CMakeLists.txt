@@ -3,8 +3,8 @@ set(COMPONENT_NAME "navigation")
 set(LOCAL_PROJ_NAME "${PROJ_NAME}_${COMPONENT_NAME}")
 
 set(EXPORT_FILENAME_LIST
-    "mirfak_navigation_export.h"
-    "mirfak_navigation_typedef.h"   
+    "helios_navigation_export.h"
+    "helios_navigation_typedef.h"   
     "tracker.h"
     "tracker_config.h"
     "tracker_tool_config.h"
@@ -36,7 +36,7 @@ endif()
 add_library(${LOCAL_PROJ_NAME} SHARED ${SRC_FILENAME_LIST} ${EXPORT_FILENAME_LIST})
 
 target_compile_definitions(${LOCAL_PROJ_NAME} PRIVATE 
-    MIRFAK_NAVIGATION_EXPORTS
+    HELIOS_NAVIGATION_EXPORTS
 )
 
 set_proj_utf8_charset(${LOCAL_PROJ_NAME})
@@ -68,7 +68,7 @@ set_target_properties(${LOCAL_PROJ_NAME} PROPERTIES
 )  
 
 install(TARGETS ${LOCAL_PROJ_NAME}
-    EXPORT mirfak-targets
+    EXPORT helios-targets
     RUNTIME DESTINATION bin
     LIBRARY DESTINATION lib
     ARCHIVE DESTINATION lib
@@ -82,5 +82,5 @@ install(FILES
 )
 
 install(FILES ${EXPORT_FILENAME_LIST}
-    DESTINATION "include/mirfak/${COMPONENT_NAME}"
+    DESTINATION "include/helios/${COMPONENT_NAME}"
 )

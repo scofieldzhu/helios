@@ -7,10 +7,10 @@
 #include <vtkObjectFactory.h>
 #include <vtkTransform.h>
 #include <vtkMath.h>
-#include "mirfak/core/render_widget.h"
-#include "mirfak/basic/log_service.h"
+#include "helios/core/render_widget.h"
+#include "helios/basic/log_service.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 vtkStandardNewMacro(PointMoveToolEditor);
 

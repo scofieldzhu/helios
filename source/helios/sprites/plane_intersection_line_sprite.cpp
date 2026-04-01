@@ -6,11 +6,11 @@
 #include "plane_intersection_line_sprite.h"
 #include <vtkTransform.h>
 #include <vtkLine.h>
-#include "mirfak/core/scene.h"
-#include "mirfak/core/slice_plane_sprite.h"
-#include "mirfak/basic/log_service.h"
+#include "helios/core/scene.h"
+#include "helios/core/slice_plane_sprite.h"
+#include "helios/basic/log_service.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 namespace{
     constexpr double kOffsetToleranceOnLine = 10.0;

@@ -15,12 +15,12 @@
 #include <vtkInformation.h>
 #include <vtkVolumePicker.h>
 #include "polygon_sprite.h"
-#include "mirfak/core/scene.h"
-#include "mirfak/basic/log_service.h"
-#include "mirfak/core/render_widget.h"
-#include "mirfak/core/sprite_cell_picker.h"
+#include "helios/core/scene.h"
+#include "helios/basic/log_service.h"
+#include "helios/core/render_widget.h"
+#include "helios/core/sprite_cell_picker.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 vtkStandardNewMacro(PolygonEditor);
 

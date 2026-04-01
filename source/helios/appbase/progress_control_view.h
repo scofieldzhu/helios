@@ -6,10 +6,10 @@
 #ifndef __progress_control_view_h__
 #define __progress_control_view_h__
 
-#include "mirfak/mirfak_nsp.h"
+#include "helios/helios_nsp.h"
 #include <QString>
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class ProgressControlView
 {

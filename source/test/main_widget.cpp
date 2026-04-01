@@ -26,25 +26,25 @@
 #include <QMessageBox>
 #include <QFileDialog>
 #include <vtkRenderer.h>
-#include "mirfak/sprites/point_cloud_sprite.h"
-#include "mirfak/sprites/composite_volume_sprite.h"
-#include "mirfak/sprites/surface_volume_sprite.h"
-#include "mirfak/core/slice_plane_sprite.h"
-#include "mirfak/sprites/ortho_planes_sprite.h"
-#include "mirfak/basic/image_data_util.h"
-#include "mirfak/sprites/plane_intersection_line_sprite.h"
-#include "mirfak/sprites/polygon_sprite.h"
-#include "mirfak/basic/log_service.h"
-#include "mirfak/core/sprite_cell_picker.h"
-#include "mirfak/sprites/plane_intersection_line_editor.h"
-#include "mirfak/sprites/sphere_sprite.h"
-#include "mirfak/sprites/line_sprite.h"
-#include "mirfak/sprites/polygon_editor.h"
-#include "mirfak/sprites/label_sprite.h"
-#include "mirfak/sprites/polydata_cutter_sprite.h"
-#include "mirfak/core/axial_plane_scene.h"
-#include "mirfak/core/coronal_plane_scene.h"
-#include "mirfak/core/sagittal_plane_scene.h"
+#include "helios/sprites/point_cloud_sprite.h"
+#include "helios/sprites/composite_volume_sprite.h"
+#include "helios/sprites/surface_volume_sprite.h"
+#include "helios/core/slice_plane_sprite.h"
+#include "helios/sprites/ortho_planes_sprite.h"
+#include "helios/basic/image_data_util.h"
+#include "helios/sprites/plane_intersection_line_sprite.h"
+#include "helios/sprites/polygon_sprite.h"
+#include "helios/basic/log_service.h"
+#include "helios/core/sprite_cell_picker.h"
+#include "helios/sprites/plane_intersection_line_editor.h"
+#include "helios/sprites/sphere_sprite.h"
+#include "helios/sprites/line_sprite.h"
+#include "helios/sprites/polygon_editor.h"
+#include "helios/sprites/label_sprite.h"
+#include "helios/sprites/polydata_cutter_sprite.h"
+#include "helios/core/axial_plane_scene.h"
+#include "helios/core/coronal_plane_scene.h"
+#include "helios/core/sagittal_plane_scene.h"
 #include "raycasting_config_load.h"
 #include "IViewer.h"
 #include "IPathDesigner.h"
@@ -52,7 +52,7 @@
 #include "ITrackerToolManager.h"
 #include "IDICOMReader.h"
 
-using namespace mirfak;
+using namespace helios;
 
 namespace {
     vtkSmartPointer<vtkLookupTable> CreateDefautlLookupTable(vtkImageData* data)
@@ -665,7 +665,7 @@ void MainWidget::initModels(vtkImageData *vol_data)
     createVolumeSprite(vol_data);    
 }
 
-void MainWidget::onAxialSlicePositionChanged(mirfak::SlicePlaneSprite* plane, double position)
+void MainWidget::onAxialSlicePositionChanged(helios::SlicePlaneSprite* plane, double position)
 {
     axial_toolbar_->slice_slider->blockSignals(true);
     double spacing = volume_data_->GetSpacing()[2];
@@ -677,7 +677,7 @@ void MainWidget::onAxialSlicePositionChanged(mirfak::SlicePlaneSprite* plane, do
     axial_toolbar_->slice_slider->blockSignals(false);
 }
 
-void MainWidget::onAxialSliceRangeChanged(mirfak::SlicePlaneSprite* plane, double range)
+void MainWidget::onAxialSliceRangeChanged(helios::SlicePlaneSprite* plane, double range)
 {
     axial_toolbar_->slice_slider->blockSignals(true);
     double spacing = volume_data_->GetSpacing()[2];
@@ -689,7 +689,7 @@ void MainWidget::onAxialSliceRangeChanged(mirfak::SlicePlaneSprite* plane, doubl
     axial_toolbar_->slice_slider->blockSignals(false);
 }
 
-void MainWidget::onCoronalSlicePositionChanged(mirfak::SlicePlaneSprite *plane, double position)
+void MainWidget::onCoronalSlicePositionChanged(helios::SlicePlaneSprite *plane, double position)
 {
     coronal_toolbar_->slice_slider->blockSignals(true);
     double spacing = volume_data_->GetSpacing()[1];
@@ -701,7 +701,7 @@ void MainWidget::onCoronalSlicePositionChanged(mirfak::SlicePlaneSprite *plane, 
     coronal_toolbar_->slice_slider->blockSignals(false);
 }
 
-void MainWidget::onCoronalSliceRangeChanged(mirfak::SlicePlaneSprite *plane, double range)
+void MainWidget::onCoronalSliceRangeChanged(helios::SlicePlaneSprite *plane, double range)
 {
     coronal_toolbar_->slice_slider->blockSignals(true);
     double spacing = volume_data_->GetSpacing()[1];
@@ -713,7 +713,7 @@ void MainWidget::onCoronalSliceRangeChanged(mirfak::SlicePlaneSprite *plane, dou
     coronal_toolbar_->slice_slider->blockSignals(false);
 }
 
-void MainWidget::onSagittalSlicePositionChanged(mirfak::SlicePlaneSprite *plane, double position)
+void MainWidget::onSagittalSlicePositionChanged(helios::SlicePlaneSprite *plane, double position)
 {
     sagittal_toolbar_->slice_slider->blockSignals(true);
     double spacing = volume_data_->GetSpacing()[0];
@@ -725,7 +725,7 @@ void MainWidget::onSagittalSlicePositionChanged(mirfak::SlicePlaneSprite *plane,
     sagittal_toolbar_->slice_slider->blockSignals(false);
 }
 
-void MainWidget::onSagittalSliceRangeChanged(mirfak::SlicePlaneSprite* plane, double range)
+void MainWidget::onSagittalSliceRangeChanged(helios::SlicePlaneSprite* plane, double range)
 {
     sagittal_toolbar_->slice_slider->blockSignals(true);
     double spacing = volume_data_->GetSpacing()[0];

@@ -6,13 +6,13 @@
 #ifndef __surface_volume_sprite_h__
 #define __surface_volume_sprite_h__
 
-#include "mirfak/sprites/abstract_volume_sprite.h"
+#include "helios/sprites/abstract_volume_sprite.h"
 
 class vtkVolume;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_SPRITES_API SurfaceVolumeSprite : public AbstractVolumeSprite
+class HELIOS_SPRITES_API SurfaceVolumeSprite : public AbstractVolumeSprite
 {
     SPRITE_DECL(SurfaceVolumeSprite, AbstractVolumeSprite)
 public:

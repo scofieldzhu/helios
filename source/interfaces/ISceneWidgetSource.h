@@ -6,17 +6,17 @@
 #ifndef ___ISceneWidgetSource_h_
 #define ___ISceneWidgetSource_h_
 
-#include "mirfak/core/render_widget.h"
+#include "helios/core/render_widget.h"
 
 class ISceneWidgetSource
 {
 public:    
-    virtual void setRenderWidget(mirfak::RenderWidget* sw) = 0;
-    virtual mirfak::RenderWidget* getRenderWidget() = 0;
+    virtual void setRenderWidget(helios::RenderWidget* sw) = 0;
+    virtual helios::RenderWidget* getRenderWidget() = 0;
     virtual ~ISceneWidgetSource() = default;    
 };
 
-#define ISCENE_WIDGET_SOURCE_IID "mirfak.plugin.ISceneWidgetSource/1.0"
+#define ISCENE_WIDGET_SOURCE_IID "helios.plugin.ISceneWidgetSource/1.0"
 
 Q_DECLARE_INTERFACE(ISceneWidgetSource, ISCENE_WIDGET_SOURCE_IID)
 

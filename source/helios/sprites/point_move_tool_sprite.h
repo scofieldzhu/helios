@@ -6,14 +6,14 @@
 #ifndef __point_move_tool_sprite_h__
 #define __point_move_tool_sprite_h__
 
-#include "mirfak/sprites/arrow_sprite.h"
-#include "mirfak/sprites/torus_sprite.h"
+#include "helios/sprites/arrow_sprite.h"
+#include "helios/sprites/torus_sprite.h"
 
 class vtkCellPicker;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_SPRITES_API PointMoveToolSprite : public Sprite
+class HELIOS_SPRITES_API PointMoveToolSprite : public Sprite
 {
 	SPRITE_DECL(PointMoveToolSprite, Sprite)
 public:

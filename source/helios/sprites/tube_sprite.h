@@ -6,16 +6,16 @@
 #ifndef __tube_sprite_h__
 #define __tube_sprite_h__
 
-#include "mirfak/core/sprite.h"
-#include "mirfak/sprites/mirfak_sprites_export.h"
+#include "helios/core/sprite.h"
+#include "helios/sprites/helios_sprites_export.h"
 
 class vtkPolyData;
 class vtkTubeFilter;
 class vtkCleanPolyData;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_SPRITES_API TubeSprite : public Sprite
+class HELIOS_SPRITES_API TubeSprite : public Sprite
 {
     SPRITE_DECL(TubeSprite, Sprite)
 public:

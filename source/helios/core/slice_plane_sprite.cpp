@@ -25,13 +25,13 @@
 #include <vtkImageClip.h>
 #include <vtkRenderer.h>
 #include <vtkProp3DCollection.h>
-#include "mirfak/basic/log_service.h"
-#include "mirfak/basic/coord_conv.h"
-#include "mirfak/basic/plane.h"
-#include "mirfak/basic/image_data_util.h"
+#include "helios/basic/log_service.h"
+#include "helios/basic/coord_conv.h"
+#include "helios/basic/plane.h"
+#include "helios/basic/image_data_util.h"
 #include "scene.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 namespace {
 	inline std::string GetPlaneActorName(std::size_t input_index)

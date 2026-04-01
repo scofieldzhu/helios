@@ -10,7 +10,7 @@
 #include <spdlog/logger.h>
 #include <spdlog/spdlog.h>
 #include <stdexcept>
-#include "mirfak/basic/mirfak_basic_export.h"
+#include "helios/basic/helios_basic_export.h"
 
 #define LOG_ASSERT(condition, message) \
     do { \
@@ -22,11 +22,11 @@
 
 class vtkObject;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-MIRFAK_BASIC_API void InitLogger(std::shared_ptr<spdlog::logger> logger);
+HELIOS_BASIC_API void InitLogger(std::shared_ptr<spdlog::logger> logger);
 
-MIRFAK_BASIC_API std::string VtkObjToLogStr(vtkObject* obj, int indent_level = 0);
+HELIOS_BASIC_API std::string VtkObjToLogStr(vtkObject* obj, int indent_level = 0);
 
 NAMESPACE_END
 

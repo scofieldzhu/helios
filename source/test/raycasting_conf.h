@@ -6,7 +6,7 @@
 #ifndef __raycasting_conf_h__
 #define __raycasting_conf_h__
 
-#include "mirfak/basic/mirfak_basic_typedef.h"
+#include "helios/basic/helios_basic_typedef.h"
 #include <QString>
 
 struct LightnesssConf
@@ -19,7 +19,7 @@ struct LightnesssConf
 struct CtrlPointConf
 {
     double intensity = 0.0;
-    mirfak::Color clr;
+    helios::Color clr;
     double opacity = 1.0;
 };
 

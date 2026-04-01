@@ -5,7 +5,7 @@
 *******************************************************/
 #include "drill_config_repository.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 DrillConfigRepository::DrillConfigRepository()
 {

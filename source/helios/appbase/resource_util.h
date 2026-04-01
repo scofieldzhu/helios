@@ -7,14 +7,14 @@
 #define __resource_util_h__
 
 #include <QString>
-#include "mirfak/appbase/mirfak_appbase_export.h"
+#include "helios/appbase/helios_appbase_export.h"
 
 class QWidget;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-MIRFAK_APPBASE_API void ApplyWidgetStyleSheet(QWidget* w, const QString& filepath);
-MIRFAK_APPBASE_API QString ReadStyleSheetFiles(const QStringList& files);
+HELIOS_APPBASE_API void ApplyWidgetStyleSheet(QWidget* w, const QString& filepath);
+HELIOS_APPBASE_API QString ReadStyleSheetFiles(const QStringList& files);
 
 NAMESPACE_END
 

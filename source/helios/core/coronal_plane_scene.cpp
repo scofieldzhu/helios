@@ -7,7 +7,7 @@
 #include <vtkCamera.h>
 #include "slice_plane_sprite.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 CoronalPlaneScene::CoronalPlaneScene(const std::string_view& name)
 	:PlaneScene(name)

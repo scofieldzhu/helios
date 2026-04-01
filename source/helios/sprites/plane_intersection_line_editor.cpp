@@ -12,13 +12,13 @@
 #include <vtkCallbackCommand.h>
 #include "plane_intersection_line_sprite.h"
 #include "plane_cutter_sprite.h"
-#include "mirfak/basic/log_service.h"
-#include "mirfak/core/scene.h"
-#include "mirfak/core/render_widget.h"
-#include "mirfak/core/slice_plane_sprite.h"
-#include "mirfak/basic/image_data_util.h"
+#include "helios/basic/log_service.h"
+#include "helios/core/scene.h"
+#include "helios/core/render_widget.h"
+#include "helios/core/slice_plane_sprite.h"
+#include "helios/basic/image_data_util.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 vtkStandardNewMacro(PlaneIntersectionLineEditor);
 

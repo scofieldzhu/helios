@@ -10,16 +10,16 @@
 #include <QString>
 #include <QMap>
 #include <vtkSmartPointer.h>
-#include "mirfak/appbase/mirfak_appbase_export.h"
+#include "helios/appbase/helios_appbase_export.h"
 
 class vtkImageData;
 class vtkPolyData;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class ModelElementSerializer;
 
-class MIRFAK_APPBASE_API ProjectPackage : public QObject
+class HELIOS_APPBASE_API ProjectPackage : public QObject
 {
     Q_OBJECT
 

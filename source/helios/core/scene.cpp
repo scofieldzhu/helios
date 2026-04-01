@@ -19,11 +19,11 @@
 #include <vtkTexture.h>
 #include <vtkImageActor.h>
 #include <vtkImageData.h>
-#include "mirfak/basic/log_service.h"
+#include "helios/basic/log_service.h"
 #include "render_widget.h"
 #include "sprite.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 Scene::Scene(const std::string_view& name)
 	:name_(name),

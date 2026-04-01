@@ -21,7 +21,7 @@ public:
     virtual ~IViewer() = default;    
 };
 
-#define IVIEWER_IID "mirfak.plugin.IViewer/1.0"
+#define IVIEWER_IID "helios.plugin.IViewer/1.0"
 
 Q_DECLARE_INTERFACE(IViewer, IVIEWER_IID)
 

@@ -3,8 +3,8 @@ set(COMPONENT_NAME "core")
 set(LOCAL_PROJ_NAME "${PROJ_NAME}_${COMPONENT_NAME}")
 
 set(EXPORT_FILENAME_LIST
-    "mirfak_core_export.h"
-    "mirfak_core_typedef.h"
+    "helios_core_export.h"
+    "helios_core_typedef.h"
     "sprite.h"
     "plane_scene.h"
     "axial_plane_scene.h"
@@ -59,7 +59,7 @@ endif()
 add_library(${LOCAL_PROJ_NAME} SHARED ${EXPORT_FILENAME_LIST} ${SRC_FILENAME_LIST})
 
 target_compile_definitions(${LOCAL_PROJ_NAME} PRIVATE 
-    MIRFAK_CORE_EXPORTS
+    HELIOS_CORE_EXPORTS
 )
 
 set_proj_utf8_charset(${LOCAL_PROJ_NAME})
@@ -82,7 +82,7 @@ set_target_properties(${LOCAL_PROJ_NAME} PROPERTIES
 )  
 
 install(TARGETS ${LOCAL_PROJ_NAME}
-    EXPORT mirfak-targets
+    EXPORT helios-targets
     RUNTIME DESTINATION bin
     LIBRARY DESTINATION lib
     ARCHIVE DESTINATION lib
@@ -96,5 +96,5 @@ install(FILES
 )
 
 install(FILES ${EXPORT_FILENAME_LIST}
-    DESTINATION "include/mirfak/${COMPONENT_NAME}"
+    DESTINATION "include/helios/${COMPONENT_NAME}"
 )

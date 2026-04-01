@@ -18,14 +18,14 @@ via the ClippingCubeBubble.
 #ifndef __composite_volume_sprite_h__
 #define __composite_volume_sprite_h__
 
-#include "mirfak/sprites/abstract_volume_sprite.h"
+#include "helios/sprites/abstract_volume_sprite.h"
 
 class vtkLODProp3D;
 class vtkVolumePicker;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_SPRITES_API CompositeVolumeSprite: public AbstractVolumeSprite
+class HELIOS_SPRITES_API CompositeVolumeSprite: public AbstractVolumeSprite
 {  
 	SPRITE_DECL(CompositeVolumeSprite, AbstractVolumeSprite)
 public:        

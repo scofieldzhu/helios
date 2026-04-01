@@ -8,9 +8,9 @@
 
 #include "scene.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_CORE_API PlaneScene : public Scene
+class HELIOS_CORE_API PlaneScene : public Scene
 {
     SCENE_DECL(PlaneScene, Scene)
 public:

@@ -6,13 +6,13 @@
 #ifndef __line_h__
 #define __line_h__
 
-#include "mirfak/basic/mirfak_basic_export.h"
-#include "mirfak/basic/xyz.hpp"
+#include "helios/basic/helios_basic_export.h"
+#include "helios/basic/xyz.hpp"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class Plane;
-class MIRFAK_BASIC_API Line
+class HELIOS_BASIC_API Line
 {
 public:
     static Line FromTwoPoints(const Point3& p1, const Point3& p2);

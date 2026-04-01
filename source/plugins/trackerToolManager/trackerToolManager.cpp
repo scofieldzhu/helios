@@ -5,7 +5,7 @@
 *******************************************************/
 #include "trackerToolManager.h"
 #include "trackerToolManagerDlg.h"
-using namespace mirfak;
+using namespace helios;
 
 TrackerToolManager::TrackerToolManager(QObject* p /*= nullptr*/)
 	:QObject(p)

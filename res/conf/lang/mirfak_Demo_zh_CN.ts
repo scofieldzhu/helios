@@ -6,7 +6,7 @@
     <message>
         <location filename="../../../source/test/main_widget.ui" line="14"/>
         <source>MainWindow</source>
-        <translation>Mirfak测试窗口</translation>
+        <translation>Helios测试窗口</translation>
     </message>
     <message>
         <location filename="../../../source/test/main_widget.ui" line="45"/>

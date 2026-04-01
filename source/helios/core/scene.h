@@ -24,17 +24,17 @@ however, the is one PaneFrame per RenderPane.
 #include <vtkImageActor.h>
 #include <vtkRenderer.h>
 #include <vtkCallbackCommand.h>
-#include "mirfak/core/mirfak_core_export.h"
-#include "mirfak/core/mirfak_core_typedef.h"
-#include "mirfak/basic/mobject.h"
+#include "helios/core/helios_core_export.h"
+#include "helios/core/helios_core_typedef.h"
+#include "helios/basic/mobject.h"
 
 class vtkCamera;
 class vtkRenderWindow;
 class vtkTexture;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_CORE_API Scene : public MObject 
+class HELIOS_CORE_API Scene : public MObject 
 {
 	SCENE_DECL(Scene, MObject)
 public:

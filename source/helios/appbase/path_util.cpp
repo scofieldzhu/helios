@@ -7,9 +7,9 @@
 #define WIN32_LEAN_AND_MEAN 
 #include <Windows.h>
 #include <QDir>
-#include "mirfak/basic/log_service.h"
+#include "helios/basic/log_service.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 static void DoRmTree(const QString &path, bool remove_self)
 {

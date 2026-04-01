@@ -3,7 +3,7 @@ set(COMPONENT_NAME "sprites")
 set(LOCAL_PROJ_NAME "${PROJ_NAME}_${COMPONENT_NAME}")
 
 set(EXPORT_FILENAME_LIST
-    "mirfak_sprites_export.h"
+    "helios_sprites_export.h"
     "point_cloud_sprite.h"
     "ortho_planes_sprite.h"
     "backdrop_sprite.h"
@@ -28,7 +28,7 @@ set(EXPORT_FILENAME_LIST
     "torus_sprite.h"
     "arrow_sprite.h"
     "wlw_editor.h"
-    "mirfak_sprites_typedef.h"
+    "helios_sprites_typedef.h"
 )
 
 set(SRC_FILENAME_LIST
@@ -61,7 +61,7 @@ set(SRC_FILENAME_LIST
 add_library(${LOCAL_PROJ_NAME} SHARED ${EXPORT_FILENAME_LIST} ${SRC_FILENAME_LIST})
 
 target_compile_definitions(${LOCAL_PROJ_NAME} PRIVATE 
-    MIRFAK_SPRITES_EXPORTS
+    HELIOS_SPRITES_EXPORTS
 )
 
 set_proj_utf8_charset(${LOCAL_PROJ_NAME})
@@ -84,7 +84,7 @@ set_target_properties(${LOCAL_PROJ_NAME} PROPERTIES
 )  
 
 install(TARGETS ${LOCAL_PROJ_NAME}
-    EXPORT mirfak-targets
+    EXPORT helios-targets
     RUNTIME DESTINATION bin
     LIBRARY DESTINATION lib
     ARCHIVE DESTINATION lib
@@ -92,7 +92,7 @@ install(TARGETS ${LOCAL_PROJ_NAME}
 )
 
 install(FILES ${EXPORT_FILENAME_LIST}
-    DESTINATION "include/mirfak/${COMPONENT_NAME}"
+    DESTINATION "include/helios/${COMPONENT_NAME}"
 )
 
 install(FILES

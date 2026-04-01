@@ -10,7 +10,7 @@
 #include <vtkProperty.h>
 #include "sphere_sprite.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 LineSprite::LineSprite(double point_size, double line_width)
     :line_source_(vtkSmartPointer<vtkLineSource>::New()),

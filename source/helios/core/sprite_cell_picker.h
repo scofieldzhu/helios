@@ -6,12 +6,12 @@
 #ifndef __sprite_cell_picker_h__
 #define __sprite_cell_picker_h__
 
-#include "mirfak/core/sprite_picker.h"
-#include "mirfak/core/mirfak_core_export.h"
+#include "helios/core/sprite_picker.h"
+#include "helios/core/helios_core_export.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_CORE_API SpriteCellPicker : public SpritePicker
+class HELIOS_CORE_API SpriteCellPicker : public SpritePicker
 {
 public:
     void setExcludedSprites(const ConstSpriteList& sprites) override{

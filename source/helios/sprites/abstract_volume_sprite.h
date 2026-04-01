@@ -6,8 +6,8 @@
 #ifndef __abstract_volume_sprite_h__
 #define __abstract_volume_sprite_h__
 
-#include "mirfak/core/sprite.h"
-#include "mirfak/sprites/mirfak_sprites_export.h"
+#include "helios/core/sprite.h"
+#include "helios/sprites/helios_sprites_export.h"
 
 class vtkImageData;
 class vtkVolumeProperty;
@@ -16,9 +16,9 @@ class vtkOpenGLGPUVolumeRayCastMapper;
 class vtkPlane;
 class vtkRenderer;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_SPRITES_API AbstractVolumeSprite: public Sprite
+class HELIOS_SPRITES_API AbstractVolumeSprite: public Sprite
 {  
 	SPRITE_DECL(AbstractVolumeSprite, Sprite)
 public:        

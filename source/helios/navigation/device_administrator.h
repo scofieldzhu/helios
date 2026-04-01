@@ -6,13 +6,13 @@
 #ifndef __device_administrator_h__
 #define __device_administrator_h__
 
-#include "mirfak/navigation/tracker.h"
+#include "helios/navigation/tracker.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class RoboticArm;
 
-class MIRFAK_NAVIGATION_API DeviceAdministrator
+class HELIOS_NAVIGATION_API DeviceAdministrator
 {
 public:
 	static DeviceAdministrator& GetInst();

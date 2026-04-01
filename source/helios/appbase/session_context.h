@@ -6,9 +6,9 @@
 #ifndef __session_context_h__
 #define __session_context_h__
 
-#include "mirfak/basic/mobject.h"
+#include "helios/basic/mobject.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class SessionContext : public MObject
 {
@@ -18,6 +18,6 @@ public:
 
 NAMESPACE_END
 
-#define SESSION_CONTEXT_DECL(TheClass, SuperClass) MOBJECT_DECL(TheClass, SuperClass, mirfak::SessionContext)
+#define SESSION_CONTEXT_DECL(TheClass, SuperClass) MOBJECT_DECL(TheClass, SuperClass, helios::SessionContext)
 
 #endif

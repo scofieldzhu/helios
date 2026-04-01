@@ -16,12 +16,12 @@
 #include <vtkARMDTracker.h>
 #include <QDir>
 #include <QTimer>
-#include "mirfak/basic/sys_util.h"
-#include "mirfak/basic/log_service.h"
+#include "helios/basic/sys_util.h"
+#include "helios/basic/log_service.h"
 #pragma comment(lib, "iphlpapi.lib")  
 #pragma comment(lib, "ws2_32.lib")  
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 bool TestReachableIp(const std::string& ip)
 {

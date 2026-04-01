@@ -3,10 +3,10 @@
 * author: zhucg
 * time:2025/1/19
 *******************************************************/
-#ifndef __mirfak_nsp_h__
-#define __mirfak_nsp_h__
+#ifndef __helios_nsp_h__
+#define __helios_nsp_h__
 
-#define MIRFAK_NAMESPACE_BEGIN namespace mirfak{
+#define HELIOS_NAMESPACE_BEGIN namespace helios{
 
 #define NAMESPACE_END }
 

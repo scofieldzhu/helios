@@ -6,11 +6,11 @@
 #ifndef __action_event_h__
 #define __action_event_h__
 
-#include "mirfak/core/mirfak_core_export.h"
+#include "helios/core/helios_core_export.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_CORE_API ActionEvent
+class HELIOS_CORE_API ActionEvent
 {
 public:
     /**

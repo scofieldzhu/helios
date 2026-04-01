@@ -6,7 +6,7 @@
 #include "action_event.h"
 #include <cstring>
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 // this list should only contain the initial, contiguous
 // set of events and should not include UserEvent

@@ -8,12 +8,12 @@
 
 #include <QMap>
 #include <optional>
-#include "mirfak/navigation/drill_config.h"
-#include "mirfak/navigation/mirfak_navigation_export.h"
+#include "helios/navigation/drill_config.h"
+#include "helios/navigation/helios_navigation_export.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_NAVIGATION_API DrillConfigRepository
+class HELIOS_NAVIGATION_API DrillConfigRepository
 {
 public:
 	static DrillConfigRepository& GetInst();

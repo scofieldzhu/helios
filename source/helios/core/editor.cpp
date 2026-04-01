@@ -8,12 +8,12 @@
 #include <vtkEventData.h>
 #include <vtkRenderer.h>
 #include "event_translator.h"
-#include "mirfak/basic/log_service.h"
+#include "helios/basic/log_service.h"
 #include "sprite.h"
 #include "scene.h"
 #include "render_widget.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 Editor::Editor()
     :event_translator_(new EventTranslator()),

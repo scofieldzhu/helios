@@ -6,17 +6,17 @@
 #ifndef __line_sprite_h__
 #define __line_sprite_h__
 
-#include "mirfak/core/sprite.h"
-#include "mirfak/sprites/mirfak_sprites_export.h"
+#include "helios/core/sprite.h"
+#include "helios/sprites/helios_sprites_export.h"
 
 class vtkLineSource;
 class vtkProperty;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class SphereSprite;
 
-class MIRFAK_SPRITES_API LineSprite : public Sprite
+class HELIOS_SPRITES_API LineSprite : public Sprite
 {
     SPRITE_DECL(LineSprite, Sprite)
 public:

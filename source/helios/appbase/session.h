@@ -8,11 +8,11 @@
 
 #include <vector>
 #include <memory>
-#include "mirfak/appbase/mirfak_appbase_export.h"
-#include "mirfak/appbase/session_id.h"
-#include "mirfak/appbase/session_context.h"
+#include "helios/appbase/helios_appbase_export.h"
+#include "helios/appbase/session_id.h"
+#include "helios/appbase/session_context.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 enum class SessionState
 {
@@ -25,7 +25,7 @@ enum class SessionState
     kUnregistered
 };
 
-class MIRFAK_APPBASE_API Session : public MObject
+class HELIOS_APPBASE_API Session : public MObject
 {
 public:
     using SessionUPtr = std::unique_ptr<Session>;
@@ -70,6 +70,6 @@ private:
 
 NAMESPACE_END
 
-#define SESSION_DECL(TheClass, SuperClass) MOBJECT_DECL(TheClass, SuperClass, mirfak::Session)
+#define SESSION_DECL(TheClass, SuperClass) MOBJECT_DECL(TheClass, SuperClass, helios::Session)
 
 #endif

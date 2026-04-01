@@ -7,7 +7,7 @@
 #include <vtkSphereSource.h>
 #include <vtkPolyDataMapper.h>
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 SphereSprite::SphereSprite()
     :sphere_source_(vtkSmartPointer<vtkSphereSource>::New())

@@ -11,7 +11,7 @@
 #include <vtkActor2D.h>
 #include <vtkProperty2D.h>
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 BackdropSprite::BackdropSprite()
     :polys_(vtkSmartPointer<vtkPolyData>::New())

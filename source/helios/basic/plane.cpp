@@ -5,7 +5,7 @@
 #include <vtkPlane.h>
 #include <vtkNew.h>
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 Plane::Plane(const Point3 &pt, const Vec3 &n)
     :normal(n),

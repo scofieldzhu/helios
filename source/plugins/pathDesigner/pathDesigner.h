@@ -18,12 +18,12 @@ class PathDesigner : public QObject, public IPathDesigner, public ISceneWidgetSo
 	Q_INTERFACES(IPathDesigner ISceneWidgetSource IViewer)
 	Q_PLUGIN_METADATA(IID IPATH_DESIGNER_IID FILE "pathDesigner.json")
 public:	
-	void loadPaths(mirfak::SurgicalPathGroup& gp) override;
-	mirfak::SurgicalPathGroup* getPathGroup() override{ return path_group_; }
+	void loadPaths(helios::SurgicalPathGroup& gp) override;
+	helios::SurgicalPathGroup* getPathGroup() override{ return path_group_; }
 	bool createView(QWidget* parent) override;
     QWidget* getViewWidget() override;   
-    void setRenderWidget(mirfak::RenderWidget* sw) override;
-    mirfak::RenderWidget* getRenderWidget() override;    
+    void setRenderWidget(helios::RenderWidget* sw) override;
+    helios::RenderWidget* getRenderWidget() override;    
     void switchLanguage(const QString &lang_code) override;
 	void onViewClosed() override;
 	void setEventSink(IViewerEventSink* sink) override;
@@ -31,9 +31,9 @@ public:
 	~PathDesigner();
 
 private:
-	mirfak::SurgicalPathGroup* path_group_ = nullptr;
+	helios::SurgicalPathGroup* path_group_ = nullptr;
 	PathDesignerDlg* dlg_ = nullptr;
-    mirfak::RenderWidget* sw_ = nullptr;
+    helios::RenderWidget* sw_ = nullptr;
 };
 
 #endif

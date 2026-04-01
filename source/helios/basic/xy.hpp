@@ -9,9 +9,9 @@
 #include <stdexcept>
 #include <sstream>
 #include <vector>
-#include "mirfak/basic/langext.h"
+#include "helios/basic/langext.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 namespace detail{
 	template <typename T>

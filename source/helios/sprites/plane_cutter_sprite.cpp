@@ -12,9 +12,9 @@
 #include <vtkProperty.h>
 #include <vtkCleanPolyData.h>
 #include <vtkTransform.h>
-#include "mirfak/basic/log_service.h"
+#include "helios/basic/log_service.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 PlaneCutterSprite::PlaneCutterSprite()
     :clean_filter_(vtkSmartPointer<vtkCleanPolyData>::New()),

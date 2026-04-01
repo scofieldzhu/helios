@@ -6,8 +6,8 @@
 #ifndef __point_cloud_sprite_h__
 #define __point_cloud_sprite_h__
 
-#include "mirfak/sprites/mirfak_sprites_export.h"
-#include "mirfak/core/sprite.h"
+#include "helios/sprites/helios_sprites_export.h"
+#include "helios/core/sprite.h"
 
 class vtkPoints;
 class vtkPolyData;
@@ -15,9 +15,9 @@ class vtkSphereSource;
 class vtkGlyph3D;
 class vtkVertexGlyphFilter;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_SPRITES_API PointCloudSprite : public Sprite
+class HELIOS_SPRITES_API PointCloudSprite : public Sprite
 {
 	SPRITE_DECL(PointCloudSprite, Sprite)
 public:  

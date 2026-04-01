@@ -6,15 +6,15 @@
 #ifndef __arrow_sprite_h__
 #define __arrow_sprite_h__
 
-#include "mirfak/core/sprite.h"
-#include "mirfak/sprites/mirfak_sprites_export.h"
+#include "helios/core/sprite.h"
+#include "helios/sprites/helios_sprites_export.h"
 
 class vtkArrowSource;
 class vtkTransformPolyDataFilter;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_SPRITES_API ArrowSprite : public Sprite
+class HELIOS_SPRITES_API ArrowSprite : public Sprite
 {
 	SPRITE_DECL(ArrowSprite, Sprite)
 public:

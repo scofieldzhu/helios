@@ -6,17 +6,17 @@
 #ifndef __plane_cutter_sprite_h__
 #define __plane_cutter_sprite_h__
 
-#include "mirfak/sprites/mirfak_sprites_export.h"
-#include "mirfak/core/sprite.h"
+#include "helios/sprites/helios_sprites_export.h"
+#include "helios/core/sprite.h"
 
 class vtkPlane;
 class vtkCutter;
 class vtkPlaneSource;
 class vtkCleanPolyData;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_SPRITES_API PlaneCutterSprite : public Sprite
+class HELIOS_SPRITES_API PlaneCutterSprite : public Sprite
 {
     SPRITE_DECL(PlaneCutterSprite, Sprite)
 public:

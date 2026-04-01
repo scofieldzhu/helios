@@ -13,7 +13,7 @@
 #include <vtkPolyData.h>
 #include "polygon_sprite.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 PointCloudSprite::PointCloudSprite(PointType type)
     :polydata_(vtkSmartPointer<vtkPolyData>::New()),

@@ -6,12 +6,12 @@
 #ifndef __plane_h__
 #define __plane_h__
 
-#include "mirfak/basic/mirfak_basic_export.h"
-#include "mirfak/basic/line.h"
+#include "helios/basic/helios_basic_export.h"
+#include "helios/basic/line.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_BASIC_API Plane
+class HELIOS_BASIC_API Plane
 {
 public:
     static Pt3Opt CalcCenterOfTriplePlanes(const Plane& p1, const Plane& p2, const Plane& p3);

@@ -7,14 +7,14 @@
 #include <vtkVolumePicker.h>
 #include <vtkObjectFactory.h>
 #include "surgical_path_sprite.h"
-#include "mirfak/sprites/sphere_sprite.h"
-#include "mirfak/sprites/line_sprite.h"
-#include "mirfak/sprites/abstract_volume_sprite.h"
-#include "mirfak/basic/log_service.h"
-#include "mirfak/core/scene.h"
-#include "mirfak/core/render_widget.h"
+#include "helios/sprites/sphere_sprite.h"
+#include "helios/sprites/line_sprite.h"
+#include "helios/sprites/abstract_volume_sprite.h"
+#include "helios/basic/log_service.h"
+#include "helios/core/scene.h"
+#include "helios/core/render_widget.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 vtkStandardNewMacro(SurgicalPathEditor);
 

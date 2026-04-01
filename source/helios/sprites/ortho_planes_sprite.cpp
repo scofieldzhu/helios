@@ -6,12 +6,12 @@
 #include "ortho_planes_sprite.h"
 #include <vtkMatrix4x4.h>
 #include <vtkTransform.h>
-#include "mirfak/basic/plane.h"
-#include "mirfak/basic/line.h"
-#include "mirfak/core/slice_plane_sprite.h"
-#include "mirfak/core/scene.h"
+#include "helios/basic/plane.h"
+#include "helios/basic/line.h"
+#include "helios/core/slice_plane_sprite.h"
+#include "helios/core/scene.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 OrthoPlanesSprite::OrthoPlanesSprite()  
 {        

@@ -10,11 +10,11 @@
 #include <QJsonArray>
 #include <QDir>
 #include "tracker.h"
-#include "mirfak_navigation_typedef.h"
-#include "mirfak/basic/log_service.h"
+#include "helios_navigation_typedef.h"
+#include "helios/basic/log_service.h"
 #include "drill_config_repository.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 std::string QStrToStd(const QString& qstr){
     return qstr.toUtf8().toStdString();

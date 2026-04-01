@@ -7,10 +7,10 @@
 #include <vtkCellPicker.h>
 #include <vtkAssemblyPath.h>
 #include <vtkMatrix4x4.h>
-#include "mirfak/core/scene.h"
-#include "mirfak/basic/log_service.h"
+#include "helios/core/scene.h"
+#include "helios/basic/log_service.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 PointMoveToolSprite::PointMoveToolSprite()
 	:axis_x_(std::make_unique<ArrowSprite>(0.03, 0.08, 0.2)),

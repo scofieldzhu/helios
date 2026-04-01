@@ -6,7 +6,7 @@
 #include "action_slot_mapper.h"
 #include "event_translator.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 ActionSlotMapper::ActionSlotMapper()
 {

@@ -4,10 +4,10 @@
 * time:2026/1/30
 *******************************************************/
 #include "scene_layout_manager.h"
-#include "mirfak/core/scene.h"
-#include "mirfak/core/scene_repository.h"
+#include "helios/core/scene.h"
+#include "helios/core/scene_repository.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 namespace{
 	void HideScene(Scene* s)

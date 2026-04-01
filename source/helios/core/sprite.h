@@ -29,11 +29,11 @@ rendering contexts.  The 'makeActors()' method should call the
 #include <vtkSmartPointer.h>
 #include <vtkActorCollection.h>
 #include <vtkActor2DCollection.h>
-#include "mirfak/basic/mobject.h"
-#include "mirfak/basic/signal.hpp"
-#include "mirfak/core/pick_info.h"
-#include "mirfak/core/mirfak_core_export.h"
-#include "mirfak/core/sprite_group.hpp"
+#include "helios/basic/mobject.h"
+#include "helios/basic/signal.hpp"
+#include "helios/core/pick_info.h"
+#include "helios/core/helios_core_export.h"
+#include "helios/core/sprite_group.hpp"
 
 class vtkCellPicker; 
 class vtkRenderWindow;
@@ -41,9 +41,9 @@ class vtkPickingManager;
 class vtkAssemblyPath;
 class vtkAbstractPropPicker;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_CORE_API Sprite : public MObject
+class HELIOS_CORE_API Sprite : public MObject
 {
 	SPRITE_DECL(Sprite, MObject)
 public:

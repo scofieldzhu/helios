@@ -8,12 +8,12 @@
 
 #include <vtkCommand.h>
 #include <vtkInteractorStyleTrackballCamera.h>
-#include "mirfak/core/mirfak_core_export.h"
-#include "mirfak/core/mirfak_core_typedef.h"
+#include "helios/core/helios_core_export.h"
+#include "helios/core/helios_core_typedef.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_CORE_API CameraInteractorStyle : public vtkInteractorStyleTrackballCamera
+class HELIOS_CORE_API CameraInteractorStyle : public vtkInteractorStyleTrackballCamera
 {
 public:
 	vtkTypeMacro(CameraInteractorStyle, vtkInteractorStyleTrackballCamera);

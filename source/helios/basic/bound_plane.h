@@ -12,12 +12,12 @@ BoundPlane -represents a plane with limited lengths.
 and normal represents its' direction.
 ***********************************************************/
 
-#include "mirfak/basic/mirfak_basic_export.h"
-#include "mirfak/basic/xyz.hpp"
+#include "helios/basic/helios_basic_export.h"
+#include "helios/basic/xyz.hpp"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_BASIC_API BoundPlane
+class HELIOS_BASIC_API BoundPlane
 {
 public:
     double length1()const;

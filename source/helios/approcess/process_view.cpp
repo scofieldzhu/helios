@@ -6,7 +6,7 @@
 #include "process_view.h"
 #include "process_view_model.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 ProcessView::ProcessView(QWidget* p)
 	:QWidget(p)

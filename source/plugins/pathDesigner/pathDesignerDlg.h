@@ -7,10 +7,10 @@
 #define __pathDesignerDlg_h__
 
 #include "ui_pathDesignerDlg.h"
-#include "mirfak/sprites/surgical_path_editor.h"
-#include "mirfak/sprites/point_move_tool_editor.h"
+#include "helios/sprites/surgical_path_editor.h"
+#include "helios/sprites/point_move_tool_editor.h"
 
-namespace mirfak{
+namespace helios{
 	class OrthoPlanesSprite;
 }
 
@@ -20,7 +20,7 @@ class PathDesignerDlg : public QWidget
 {
 	Q_OBJECT
 public:
-	void setRenderWidget(mirfak::RenderWidget *sw);
+	void setRenderWidget(helios::RenderWidget *sw);
 	PathDesignerDlg(QWidget* p, PathDesigner* pd);
 	~PathDesignerDlg();
 
@@ -39,17 +39,17 @@ private slots:
 private:
 	void onPathCreated(std::string path_name);
 	Ui::Form ui_;
-	std::shared_ptr<mirfak::SurgicalPathSprite> current_surgical_path_;
-	vtkSmartPointer<mirfak::SurgicalPathEditor> surgical_path_editor_;
+	std::shared_ptr<helios::SurgicalPathSprite> current_surgical_path_;
+	vtkSmartPointer<helios::SurgicalPathEditor> surgical_path_editor_;
 	unsigned int path_create_event_bind_id_ = -1;
-	mirfak::RenderWidget* render_widget_ = nullptr;
-	mirfak::Scene* axial_scene_ = nullptr;
-	mirfak::Scene* coronal_scene_ = nullptr;
-	mirfak::Scene* sagittal_scene_ = nullptr;
-	mirfak::Scene* ortho_scene_ = nullptr;
-	std::unique_ptr<mirfak::PointMoveToolSprite> point_move_tool_;
-	vtkSmartPointer<mirfak::PointMoveToolEditor> point_move_tool_editor_;
-	mirfak::OrthoPlanesSprite* orthoplanes_ = nullptr;
+	helios::RenderWidget* render_widget_ = nullptr;
+	helios::Scene* axial_scene_ = nullptr;
+	helios::Scene* coronal_scene_ = nullptr;
+	helios::Scene* sagittal_scene_ = nullptr;
+	helios::Scene* ortho_scene_ = nullptr;
+	std::unique_ptr<helios::PointMoveToolSprite> point_move_tool_;
+	vtkSmartPointer<helios::PointMoveToolEditor> point_move_tool_editor_;
+	helios::OrthoPlanesSprite* orthoplanes_ = nullptr;
 	PathDesigner* pd_;
 };
 

@@ -42,8 +42,8 @@ add_executable(${LOCAL_PROJ_NAME} ${SOURCE_FILES} ${NP_UI_HEADERS})
 
 target_include_directories(${LOCAL_PROJ_NAME} PRIVATE
     ${CMAKE_CURRENT_BINARY_DIR}
-    ${PROJECT_SOURCE_DIR}/source/mirfak/core
-    ${PROJECT_SOURCE_DIR}/source/mirfak/sprites
+    ${PROJECT_SOURCE_DIR}/source/helios/core
+    ${PROJECT_SOURCE_DIR}/source/helios/sprites
     ${PROJECT_SOURCE_DIR}/source/interfaces
 )
 

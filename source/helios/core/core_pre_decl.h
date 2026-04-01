@@ -6,9 +6,9 @@
 #ifndef __core_pre_decl_h__
 #define __core_pre_decl_h__
 
-#include "mirfak/mirfak_nsp.h"
+#include "helios/helios_nsp.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class Scene;
 class SceneRepository;

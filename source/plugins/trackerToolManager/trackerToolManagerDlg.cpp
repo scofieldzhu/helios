@@ -7,12 +7,12 @@
 #include <QTimer>
 #include <QDir>
 #include <QMessageBox>
-#include "mirfak/basic/log_service.h"
-#include "mirfak/navigation/drill_config_repository.h"
-#include "mirfak/navigation/device_administrator.h"
-#include "mirfak/core/scene_repository.h"
+#include "helios/basic/log_service.h"
+#include "helios/navigation/drill_config_repository.h"
+#include "helios/navigation/device_administrator.h"
+#include "helios/core/scene_repository.h"
 
-using namespace mirfak;
+using namespace helios;
 
 namespace{
     QString GetConfigDirectory()

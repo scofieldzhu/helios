@@ -14,7 +14,7 @@ find_package(Qt5 REQUIRED COMPONENTS Core Gui Widgets)
 set(TASK_HEADERS 
     task_progressor_view.h
     movie_label.h
-    ${CMAKE_SOURCE_DIR}/source/mirfak/appbase/task_progressor_ipc_data.h
+    ${CMAKE_SOURCE_DIR}/source/helios/appbase/task_progressor_ipc_data.h
 )
 
 set(TASK_SOURCES 
@@ -38,7 +38,7 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
 )  
 target_include_directories(${PROJECT_NAME} PUBLIC
     ${PROJECT_BINARY_DIR}
-    ${CMAKE_SOURCE_DIR}/source/mirfak/appbase
+    ${CMAKE_SOURCE_DIR}/source/helios/appbase
 )
 target_link_libraries(${PROJECT_NAME} Qt5::Core Qt5::Gui Qt5::Widgets)
 

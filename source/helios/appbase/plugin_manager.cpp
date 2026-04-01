@@ -10,10 +10,10 @@
 #include <QJsonValue>
 #include <QJsonArray>
 #include <QLocale>
-#include "mirfak/basic/log_service.h"
+#include "helios/basic/log_service.h"
 #include "log_misc.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 namespace{
 	QStringList FindPluginFiles(const QString& dir_path)

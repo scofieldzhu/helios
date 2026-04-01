@@ -6,14 +6,14 @@
 #ifndef __handpiece_sprite_h__
 #define __handpiece_sprite_h__
 
-#include "mirfak/navigation/drill_sprite.h"
-#include "mirfak/navigation/tracker_tool_config.h"
+#include "helios/navigation/drill_sprite.h"
+#include "helios/navigation/tracker_tool_config.h"
 
 class vtkTransformPolyDataFilter;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_NAVIGATION_API HandpieceSprite : public Sprite
+class HELIOS_NAVIGATION_API HandpieceSprite : public Sprite
 {
     SPRITE_DECL(HandpieceSprite, Sprite)
 public:    

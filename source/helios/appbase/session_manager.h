@@ -8,11 +8,11 @@
 
 #include <unordered_map>
 #include <atomic>
-#include "mirfak/appbase/session.h"
+#include "helios/appbase/session.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_APPBASE_API SessionManager
+class HELIOS_APPBASE_API SessionManager
 {
 public:
     template<typename T, typename... Args>

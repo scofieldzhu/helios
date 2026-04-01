@@ -6,15 +6,15 @@
 #ifndef __task_progressor_controller_h__
 #define __task_progressor_controller_h__
 
-#include "mirfak/appbase/mirfak_appbase_export.h"
-#include "mirfak/appbase/progress_control_view.h"
+#include "helios/appbase/helios_appbase_export.h"
+#include "helios/appbase/progress_control_view.h"
 
 class QSharedMemory;
 class QWidget;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_APPBASE_API TaskProgressorController final : public ProgressControlView 
+class HELIOS_APPBASE_API TaskProgressorController final : public ProgressControlView 
 {
 public:
     static TaskProgressorController* GetInstance();    

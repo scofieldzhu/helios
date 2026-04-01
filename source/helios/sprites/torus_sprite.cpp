@@ -9,7 +9,7 @@
 #include <vtkPolyDataMapper.h>
 #include <vtkActor.h>
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 TorusSprite::TorusSprite(double inner_radius, double outer_radius, double thickness)
 	:torus_source_(vtkSmartPointer<vtkDiskSource>::New()),

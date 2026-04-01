@@ -12,7 +12,7 @@
 #include <vtkCleanPolyData.h>
 #include <vtkProperty.h>
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 TubeSprite::TubeSprite(double r)
     :tube_source_(vtkSmartPointer<vtkTubeFilter>::New()),

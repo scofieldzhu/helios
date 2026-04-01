@@ -6,16 +6,16 @@
 #include "pathDesignerDlg.h"
 #include <QColorDialog>
 #include <vtkPlane.h>
-#include "mirfak/sprites/surgical_path_editor.h"
-#include "mirfak/core/render_widget.h"
-#include "mirfak/sprites/abstract_volume_sprite.h"
-#include "mirfak/sprites/polydata_cutter_sprite.h"
-#include "mirfak/sprites/ortho_planes_sprite.h"
-#include "mirfak/core/slice_plane_sprite.h"
-#include "mirfak/core/scene_repository.h"
+#include "helios/sprites/surgical_path_editor.h"
+#include "helios/core/render_widget.h"
+#include "helios/sprites/abstract_volume_sprite.h"
+#include "helios/sprites/polydata_cutter_sprite.h"
+#include "helios/sprites/ortho_planes_sprite.h"
+#include "helios/core/slice_plane_sprite.h"
+#include "helios/core/scene_repository.h"
 #include "pathDesigner.h"
 
-using namespace mirfak;
+using namespace helios;
 
 PathDesignerDlg::PathDesignerDlg(QWidget* p, PathDesigner* pd)
 	:QWidget(p),

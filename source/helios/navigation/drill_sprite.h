@@ -6,15 +6,15 @@
 #ifndef __drill_sprite_h__
 #define __drill_sprite_h__
 
-#include "mirfak/core/sprite.h"
-#include "mirfak/navigation/drill_config.h"
-#include "mirfak/navigation/mirfak_navigation_export.h"
+#include "helios/core/sprite.h"
+#include "helios/navigation/drill_config.h"
+#include "helios/navigation/helios_navigation_export.h"
 
 class vtkPolyData;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_NAVIGATION_API DrillSprite : public Sprite
+class HELIOS_NAVIGATION_API DrillSprite : public Sprite
 {
     SPRITE_DECL(DrillSprite, Sprite)
 public:

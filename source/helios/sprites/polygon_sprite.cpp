@@ -29,12 +29,12 @@
 #include <vtkHardwareSelector.h>
 #include <vtkInformation.h>
 #include <vtkRenderer.h>
-#include "mirfak/basic/coord_conv.h"
-#include "mirfak/basic/log_service.h"
-#include "mirfak/core/scene.h"
-#include "mirfak/core/render_widget.h"
+#include "helios/basic/coord_conv.h"
+#include "helios/basic/log_service.h"
+#include "helios/core/scene.h"
+#include "helios/core/render_widget.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 PolygonSprite::PolygonSprite()
     :points_(vtkSmartPointer<vtkPoints>::New()),

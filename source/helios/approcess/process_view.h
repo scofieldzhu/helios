@@ -7,14 +7,14 @@
 #define __process_view_h__
 
 #include <QWidget>
-#include "mirfak/approcess/mirfak_approcess_export.h"
-#include "mirfak/approcess/mirfak_approcess_typedef.h"
+#include "helios/approcess/helios_approcess_export.h"
+#include "helios/approcess/helios_approcess_typedef.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class ProcessViewModel;
 
-class MIRFAK_APPROCESS_API ProcessView : public QWidget
+class HELIOS_APPROCESS_API ProcessView : public QWidget
 {
 	Q_OBJECT
 public:

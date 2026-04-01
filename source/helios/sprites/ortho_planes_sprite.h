@@ -6,15 +6,15 @@
 #ifndef __ortho_planes_sprite_h__
 #define __ortho_planes_sprite_h__
 
-#include "mirfak/core/sprite.h"
-#include "mirfak/sprites/mirfak_sprites_export.h"
+#include "helios/core/sprite.h"
+#include "helios/sprites/helios_sprites_export.h"
 
 class vtkImageData;
 class vtkLookupTable;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_SPRITES_API OrthoPlanesSprite : public Sprite
+class HELIOS_SPRITES_API OrthoPlanesSprite : public Sprite
 {      
 	SPRITE_DECL(OrthoPlanesSprite, Sprite)
 public:    

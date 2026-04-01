@@ -1,0 +1,39 @@
+@PACKAGE_INIT@
+
+# 包含导出目标
+include("${CMAKE_CURRENT_LIST_DIR}/helios-targets.cmake")
+
+# 设置包变量
+set(HELIOS_FOUND TRUE)
+set(HELIOS_VERSION @PROJECT_VERSION@)
+
+# 检查组件
+set(HELIOS_COMPONENTS basic core sprites navigation appbase)
+
+# 提供组件查找结果
+foreach(comp ${HELIOS_COMPONENTS})
+    if(TARGET helios::helios_${comp})
+        set(HELIOS_${comp}_FOUND TRUE)
+    else()
+        set(HELIOS_${comp}_FOUND FALSE)
+    endif()
+endforeach()
+
+# 处理 find_package 的组件要求
+if(HELIOS_FIND_COMPONENTS)
+    foreach(comp ${HELIOS_FIND_COMPONENTS})
+        if(NOT TARGET helios::helios_${comp})
+            set(HELIOS_${comp}_FOUND FALSE)
+            if(HELIOS_FIND_REQUIRED_${comp})
+                set(HELIOS_FOUND FALSE)
+                set(HELIOS_NOT_FOUND_MESSAGE 
+                    "Missing required Helios component: ${comp}")
+            endif()
+        else()
+            set(HELIOS_${comp}_FOUND TRUE)
+        endif()
+    endforeach()
+endif()
+
+# 标准包检查
+check_required_components(HELIOS)

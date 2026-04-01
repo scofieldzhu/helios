@@ -6,9 +6,9 @@
 #include "plane_sprite.h"
 #include <vtkPlaneSource.h>
 #include <vtkPolyDataMapper.h>
-#include "mirfak/basic/log_service.h"
+#include "helios/basic/log_service.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 PlaneSprite::PlaneSprite()
     :plane_source_(vtkSmartPointer<vtkPlaneSource>::New())

@@ -6,7 +6,7 @@
 #include "pathDesigner.h"
 #include "pathDesignerDlg.h"
 
-using namespace mirfak;
+using namespace helios;
 
 PathDesigner::PathDesigner(QObject* p /*= nullptr*/)
 	:QObject(p)
@@ -17,7 +17,7 @@ PathDesigner::~PathDesigner()
 	delete dlg_;
 }
 
-void PathDesigner::loadPaths(mirfak::SurgicalPathGroup& gp)
+void PathDesigner::loadPaths(helios::SurgicalPathGroup& gp)
 {
 	path_group_ = &gp;
 }

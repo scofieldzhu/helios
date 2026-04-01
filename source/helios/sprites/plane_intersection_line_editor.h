@@ -6,12 +6,12 @@
 #ifndef __plane_intersection_line_editor_h__
 #define __plane_intersection_line_editor_h__
 
-#include "mirfak/core/editor.h"
-#include "mirfak/sprites/plane_intersection_line_sprite.h"
+#include "helios/core/editor.h"
+#include "helios/sprites/plane_intersection_line_sprite.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_SPRITES_API PlaneIntersectionLineEditor : public Editor
+class HELIOS_SPRITES_API PlaneIntersectionLineEditor : public Editor
 {
     vtkTypeMacro(PlaneIntersectionLineEditor, Editor)
 public:

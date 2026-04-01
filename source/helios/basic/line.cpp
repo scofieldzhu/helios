@@ -4,9 +4,9 @@
 * time:2025/1/24
 *******************************************************/
 #include "line.h"
-#include "mirfak/basic/plane.h"
+#include "helios/basic/plane.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 Line::Line(const Point3& pt, const Vec3& n)
     :origin(pt),

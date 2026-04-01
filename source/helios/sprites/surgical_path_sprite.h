@@ -6,9 +6,9 @@
 #ifndef __surgical_path_sprite_h__
 #define __surgical_path_sprite_h__
 
-#include "mirfak/core/sprite.h"
-#include "mirfak/sprites/mirfak_sprites_export.h"
-#include "mirfak/core/sprite_group.hpp"
+#include "helios/core/sprite.h"
+#include "helios/sprites/helios_sprites_export.h"
+#include "helios/core/sprite_group.hpp"
 
 class vtkCylinderSource;
 class vtkConeSource;
@@ -18,11 +18,11 @@ class vtkCleanPolyData;
 class vtkAlgorithmOutput;
 class vtkCellPicker;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class SphereSprite;
 
-class MIRFAK_SPRITES_API SurgicalPathSprite : public Sprite
+class HELIOS_SPRITES_API SurgicalPathSprite : public Sprite
 {
     SPRITE_DECL(SurgicalPathSprite, Sprite)
 public:

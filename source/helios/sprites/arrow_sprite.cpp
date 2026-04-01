@@ -10,7 +10,7 @@
 #include <vtkActor.h>
 #include <vtkTransform.h>
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 ArrowSprite::ArrowSprite(double shaft_radius, double tip_radius, double tip_len)
 	:arrow_source_(vtkSmartPointer<vtkArrowSource>::New()),

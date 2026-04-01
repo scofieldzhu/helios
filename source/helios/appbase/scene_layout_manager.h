@@ -7,14 +7,14 @@
 #define __scene_layout_manager_h__
 
 #include <QObject>
-#include "mirfak/appbase/scene_layout.h"
-#include "mirfak/appbase/mirfak_appbase_export.h"
+#include "helios/appbase/scene_layout.h"
+#include "helios/appbase/helios_appbase_export.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class SceneRepository;
 
-class MIRFAK_APPBASE_API SceneLayoutManager : public QObject
+class HELIOS_APPBASE_API SceneLayoutManager : public QObject
 {
 	Q_OBJECT
 

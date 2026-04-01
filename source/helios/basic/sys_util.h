@@ -7,15 +7,15 @@
 #define __sys_util_h__
 
 #include <chrono>
-#include "mirfak/basic/mirfak_basic_export.h"
+#include "helios/basic/helios_basic_export.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-MIRFAK_BASIC_API double GetUTCTime();
-MIRFAK_BASIC_API double GetCPUTime();
-MIRFAK_BASIC_API unsigned long long GetSysTickCount();
+HELIOS_BASIC_API double GetUTCTime();
+HELIOS_BASIC_API double GetCPUTime();
+HELIOS_BASIC_API unsigned long long GetSysTickCount();
 
-class MIRFAK_BASIC_API StopWatch
+class HELIOS_BASIC_API StopWatch
 {
 public:
     void restart();
@@ -27,7 +27,7 @@ private:
     std::chrono::steady_clock::time_point t0_;
 };
 
-MIRFAK_BASIC_API std::string GenUuidString();
+HELIOS_BASIC_API std::string GenUuidString();
 
 NAMESPACE_END
 

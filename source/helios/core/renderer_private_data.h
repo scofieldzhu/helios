@@ -7,14 +7,14 @@
 #define __renderer_private_data_h__
 
 #include <vtkObject.h>
-#include "mirfak/core/core_pre_decl.h"
+#include "helios/core/core_pre_decl.h"
 
 class RendererPrivateData : public vtkObject 
 {
 public:
     vtkTypeMacro(RendererPrivateData, vtkObject);
 	static RendererPrivateData* New();
-	mirfak::Scene* scene = nullptr;
+	helios::Scene* scene = nullptr;
     
 private:
 	RendererPrivateData(){}

@@ -6,9 +6,9 @@
 #ifndef __tracker_tool_config_h__
 #define __tracker_tool_config_h__
 
-#include "mirfak/navigation/mirfak_navigation_typedef.h"
+#include "helios/navigation/helios_navigation_typedef.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 struct TrackerToolConfig
 {

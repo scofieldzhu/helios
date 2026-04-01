@@ -7,16 +7,16 @@
 #define __action_slot_mapper_h__
 
 #include <map>
-#include "mirfak/core/mirfak_core_export.h"
+#include "helios/core/helios_core_export.h"
 
 class vtkEventData;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class EventTranslator;
 class Editor;
 
-class MIRFAK_CORE_API ActionSlotMapper
+class HELIOS_CORE_API ActionSlotMapper
 {
 public:
     void setEventTranslator(EventTranslator* translator);

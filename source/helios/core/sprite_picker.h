@@ -6,10 +6,10 @@
 #ifndef __sprite_picker_h__
 #define __sprite_picker_h__
 
-#include "mirfak/core/mirfak_core_typedef.h"
-#include "mirfak/core/pick_info.h"
+#include "helios/core/helios_core_typedef.h"
+#include "helios/core/pick_info.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class SpritePicker
 {

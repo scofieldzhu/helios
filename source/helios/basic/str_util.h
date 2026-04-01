@@ -6,13 +6,13 @@
 #ifndef __str_util_h__
 #define __str_util_h__
 
-#include "mirfak/basic/mirfak_basic_export.h"
+#include "helios/basic/helios_basic_export.h"
 #include <string>
 #include <initializer_list>
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-MIRFAK_BASIC_API std::string TrimString(const std::string& s, std::initializer_list<unsigned char> dirty_chars);
+HELIOS_BASIC_API std::string TrimString(const std::string& s, std::initializer_list<unsigned char> dirty_chars);
 
 NAMESPACE_END
 

@@ -3,14 +3,14 @@ set(COMPONENT_NAME "appbase")
 set(LOCAL_PROJ_NAME "${PROJ_NAME}_${COMPONENT_NAME}")
 
 set(EXPORT_FILENAME_LIST
-    "mirfak_${COMPONENT_NAME}_export.h"    
+    "helios_${COMPONENT_NAME}_export.h"    
     "doc_package.h"
     "vtk_image_data_serializer.h"
     "vtk_poly_data_serializer.h"
     "default_image_data_serializer.h"   
     "default_poly_data_serializer.h"    
     "path_util.h"
-    "mirfak_appbase_typedef.h"
+    "helios_appbase_typedef.h"
     "log_misc.h"
     "session_id.h"
     "session.h"
@@ -56,7 +56,7 @@ endif()
 add_library(${LOCAL_PROJ_NAME} SHARED ${SRC_FILENAME_LIST} ${EXPORT_FILENAME_LIST})
 
 target_compile_definitions(${LOCAL_PROJ_NAME} PRIVATE 
-    MIRFAK_APPBASE_EXPORTS
+    HELIOS_APPBASE_EXPORTS
 )
 
 target_compile_definitions(${LOCAL_PROJ_NAME} PUBLIC
@@ -89,7 +89,7 @@ set_target_properties(${LOCAL_PROJ_NAME} PROPERTIES
 )  
 
 install(TARGETS ${LOCAL_PROJ_NAME}
-    EXPORT mirfak-targets
+    EXPORT helios-targets
     RUNTIME DESTINATION bin
     LIBRARY DESTINATION lib
     ARCHIVE DESTINATION lib
@@ -97,7 +97,7 @@ install(TARGETS ${LOCAL_PROJ_NAME}
 )
 
 install(FILES ${EXPORT_FILENAME_LIST}
-    DESTINATION "include/mirfak/${COMPONENT_NAME}"
+    DESTINATION "include/helios/${COMPONENT_NAME}"
 )
 
 install(FILES

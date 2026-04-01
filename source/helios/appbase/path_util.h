@@ -6,16 +6,16 @@
 #ifndef __path_util_h__
 #define __path_util_h__
 
-#include "mirfak/appbase/mirfak_appbase_export.h"
-#include "mirfak/appbase/mirfak_appbase_typedef.h"
+#include "helios/appbase/helios_appbase_export.h"
+#include "helios/appbase/helios_appbase_typedef.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 namespace path_util
 {
-    MIRFAK_APPBASE_API bool RemoveTree(const QString &path, bool remove_self);
-    MIRFAK_APPBASE_API QStringList SearchDirFiles(const QString& dir, const QStringList& required_extension_names);
-    MIRFAK_APPBASE_API void SetDirHidden(const QString& dir);
+    HELIOS_APPBASE_API bool RemoveTree(const QString &path, bool remove_self);
+    HELIOS_APPBASE_API QStringList SearchDirFiles(const QString& dir, const QStringList& required_extension_names);
+    HELIOS_APPBASE_API void SetDirHidden(const QString& dir);
 };
 
 NAMESPACE_END

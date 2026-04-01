@@ -18,10 +18,10 @@
 #include <vtkPlane.h>
 //#include <vtkMeshVolumeScalarPicker.h>
 #include <vtkVolume.h>
-#include "mirfak/core/scene.h"
-#include "mirfak/basic/log_service.h"
+#include "helios/core/scene.h"
+#include "helios/basic/log_service.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 namespace{
     constexpr double ISO1 = 0.0;

@@ -11,9 +11,9 @@
 #include <stdexcept>
 #include <algorithm>
 #include <type_traits>
-#include "mirfak/basic/signal.hpp"
+#include "helios/basic/signal.hpp"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 template <class T>
 T* GetPtr(T* p) noexcept {

@@ -11,7 +11,7 @@
 #include "slice_plane_sprite.h"
 #include "render_widget.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 PlaneScene::PlaneScene(const std::string_view& name)
 	:Scene(name)

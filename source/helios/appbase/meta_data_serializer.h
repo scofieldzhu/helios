@@ -7,9 +7,9 @@
 #define __meta_data_serializer_h__
 
 #include <iosfwd>
-#include "mirfak/basic/mirfak_basic_typedef.h"
+#include "helios/basic/helios_basic_typedef.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class MetaDataSerializer
 {

@@ -7,11 +7,11 @@
 #define __log_misc_h__
 
 #include <QString>
-#include "mirfak/appbase/mirfak_appbase_export.h"
+#include "helios/appbase/helios_appbase_export.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-MIRFAK_APPBASE_API std::string QStrToLogStr(const QString& qstr);
+HELIOS_APPBASE_API std::string QStrToLogStr(const QString& qstr);
 
 NAMESPACE_END
 

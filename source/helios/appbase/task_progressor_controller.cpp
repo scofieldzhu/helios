@@ -13,8 +13,8 @@
 #include <QProcess>
 #include <QPainter>
 #include "task_progressor_ipc_data.h"
-#include "mirfak/basic/log_service.h"
-#include "mirfak/appbase/log_misc.h"
+#include "helios/basic/log_service.h"
+#include "helios/appbase/log_misc.h"
 
 namespace{
     void GrabWidgetSnapshot(QWidget* widget, const QString& saved_path)
@@ -71,7 +71,7 @@ namespace{
             SPDLOG_ERROR("save failed!\n");
             return;
         }
-        SPDLOG_TRACE("save sucess! path:{}", mirfak::QStrToLogStr(saved_path)) ;
+        SPDLOG_TRACE("save sucess! path:{}", helios::QStrToLogStr(saved_path)) ;
     }
 
     bool CheckAliveProcessex(const char* target_proc_name)
@@ -119,7 +119,7 @@ void WaitNotFunUntil(WFun f, const char* p, uint64_t millsec)
     }
 }
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 TaskProgressorController* TaskProgressorController::stInstance_ = nullptr;
 
@@ -163,12 +163,12 @@ bool TaskProgressorController::init(QWidget* master_window, const QString& snaps
         return false;
     }    
     if(!QFileInfo(snapshot_save_location).isDir()){
-        SPDLOG_ERROR("Given snapshot image save location(\"{}\") is invalid directory!", mirfak::QStrToLogStr(snapshot_save_location));
+        SPDLOG_ERROR("Given snapshot image save location(\"{}\") is invalid directory!", helios::QStrToLogStr(snapshot_save_location));
         return false;
     }
     QString progressor_path = getProgressorAbsFilePath(progressor_filename);
     if(progressor_path.isEmpty()){
-        SPDLOG_ERROR("Progressor execute file(\"{}\") not exists!", mirfak::QStrToLogStr(progressor_filename));
+        SPDLOG_ERROR("Progressor execute file(\"{}\") not exists!", helios::QStrToLogStr(progressor_filename));
         return false;
     }
     snapshot_save_dir_ = snapshot_save_location;
@@ -187,7 +187,7 @@ void TaskProgressorController::startIPC()
         ipc_shm_->detach();
     }
 	if(!ipc_shm_->create(sizeof(TaskProgressorIpcData))){
-		SPDLOG_ERROR("create shared memory failed! detail reason: {} \n", mirfak::QStrToLogStr(ipc_shm_->errorString()));
+		SPDLOG_ERROR("create shared memory failed! detail reason: {} \n", helios::QStrToLogStr(ipc_shm_->errorString()));
 		return;
 	}
     ipc_shm_->lock();
@@ -213,7 +213,7 @@ void TaskProgressorController::startProgressorProcess(const QString& abs_progres
         &pid
     );
     if(!ok){
-        SPDLOG_ERROR("Start progressor process failed! program:\"{}\"", mirfak::QStrToLogStr(abs_progressor_file_path));
+        SPDLOG_ERROR("Start progressor process failed! program:\"{}\"", helios::QStrToLogStr(abs_progressor_file_path));
     }else{
         SPDLOG_INFO("Start progressor process successfully! pid:{}", pid);
     }
@@ -228,7 +228,7 @@ void TaskProgressorController::destroy()
 {
     if(ipc_shm_->isAttached()) {
         if(!ipc_shm_->detach()) {
-            SPDLOG_WARN("Detach failed! error:{}", mirfak::QStrToLogStr(ipc_shm_->errorString()));
+            SPDLOG_WARN("Detach failed! error:{}", helios::QStrToLogStr(ipc_shm_->errorString()));
         }
     }
 }

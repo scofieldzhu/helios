@@ -7,7 +7,7 @@
 #include "deftimescheduler.h"
 #include "basicFunctions.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 namespace {
     ScheduleId gNextId = 0;

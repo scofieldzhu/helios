@@ -8,15 +8,15 @@
 
 #include <vtkRenderWindowInteractor.h>
 #include <vtkCallbackCommand.h>
-#include "mirfak/core/scene.h"
-#include "mirfak/core/action_slot_mapper.h"
-#include "mirfak/core/action_event.h"
+#include "helios/core/scene.h"
+#include "helios/core/action_slot_mapper.h"
+#include "helios/core/action_event.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class EventTranslator;
 
-class MIRFAK_CORE_API Editor : public vtkObject
+class HELIOS_CORE_API Editor : public vtkObject
 {
     vtkTypeMacro(Editor, vtkObject);
 public:

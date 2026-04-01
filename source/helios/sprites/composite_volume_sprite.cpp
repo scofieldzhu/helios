@@ -15,10 +15,10 @@
 #include <vtkCuller.h>
 #include <vtkFrustumCoverageCuller.h>
 #include <vtkVolumePicker.h>
-#include "mirfak/basic/log_service.h"
-#include "mirfak/core/scene.h"
+#include "helios/basic/log_service.h"
+#include "helios/core/scene.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 CompositeVolumeSprite::CompositeVolumeSprite(vtkIdType max_mem_bytes)
 	:AbstractVolumeSprite(max_mem_bytes),

@@ -7,9 +7,9 @@
 #define __process_view_interface_h__
 
 #include <QWidget>
-#include "mirfak/mirfak_nsp.h"
+#include "helios/helios_nsp.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class ProcessView;
 
@@ -26,7 +26,7 @@ public:
 
 NAMESPACE_END
 
-#define IVIEWER_IID "mirfak.plugin.IViewer/1.0"
+#define IVIEWER_IID "helios.plugin.IViewer/1.0"
 
 Q_DECLARE_INTERFACE(IViewer, IVIEWER_IID)
 

@@ -9,10 +9,10 @@
 #include <vtkActor.h>
 #include <vtkSTLReader.h>
 #include <QFile>
-#include "mirfak/basic/log_service.h"
-#include "mirfak_navigation_typedef.h"
+#include "helios/basic/log_service.h"
+#include "helios_navigation_typedef.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 extern std::string QStrToStd(const QString& qstr);
 

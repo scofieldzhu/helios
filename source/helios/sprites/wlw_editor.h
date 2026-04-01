@@ -6,13 +6,13 @@
 #ifndef __change_thresold_range_editor_h__
 #define __change_thresold_range_editor_h__
 
-#include "mirfak/core/editor.h"
-#include "mirfak/sprites/mirfak_sprites_export.h"
-#include "mirfak/sprites/mirfak_sprites_typedef.h"
+#include "helios/core/editor.h"
+#include "helios/sprites/helios_sprites_export.h"
+#include "helios/sprites/helios_sprites_typedef.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_SPRITES_API WLWEditor : public Editor
+class HELIOS_SPRITES_API WLWEditor : public Editor
 {
     vtkTypeMacro(WLWEditor, Editor)
 

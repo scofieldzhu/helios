@@ -10,7 +10,7 @@
 #include <sstream>
 #include <vtkIndent.h>
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 bool InVSDebugger()
 {

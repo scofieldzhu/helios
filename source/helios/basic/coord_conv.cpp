@@ -6,7 +6,7 @@
 #include "coord_conv.h"
 #include <vtkPoints.h>
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 vtkSmartPointer<vtkPoints> ToVtkPoints(const Pt3List& pts)
 {

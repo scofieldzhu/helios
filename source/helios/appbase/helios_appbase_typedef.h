@@ -3,13 +3,13 @@
 * author: zhucg
 * time:2025/12/25
 *******************************************************/
-#ifndef __mirfak_appbase_typedef_h__
-#define __mirfak_appbase_typedef_h__
+#ifndef __helios_appbase_typedef_h__
+#define __helios_appbase_typedef_h__
 
-#include "mirfak/sprites/mirfak_sprites_typedef.h"
-#include "mirfak/appbase/log_misc.h"
+#include "helios/sprites/helios_sprites_typedef.h"
+#include "helios/appbase/log_misc.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class Session;
 class SessionContext;

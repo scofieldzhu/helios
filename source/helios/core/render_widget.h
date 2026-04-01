@@ -7,14 +7,14 @@
 #define __render_widget_h__
 
 #include <QVTKOpenGLNativeWidget.h>
-#include "mirfak/core/mirfak_core_export.h"
-#include "mirfak/core/mirfak_core_typedef.h"
+#include "helios/core/helios_core_export.h"
+#include "helios/core/helios_core_typedef.h"
 
 class vtkTexture;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_CORE_API RenderWidget : public QVTKOpenGLNativeWidget
+class HELIOS_CORE_API RenderWidget : public QVTKOpenGLNativeWidget
 {
     Q_OBJECT
 public:

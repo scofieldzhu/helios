@@ -7,11 +7,11 @@
 #define __default_poly_data_serializer_h__
 
 #include "vtk_poly_data_serializer.h"
-#include "mirfak/appbase/mirfak_appbase_export.h"
+#include "helios/appbase/helios_appbase_export.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_APPBASE_API DefaultPolyDataSerializer : public VtkPolyDataSerializer
+class HELIOS_APPBASE_API DefaultPolyDataSerializer : public VtkPolyDataSerializer
 {
 public:
 	bool writeFile(vtkPolyData* data, const QString& filepath) override;

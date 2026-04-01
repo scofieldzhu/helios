@@ -6,14 +6,14 @@
 #ifndef __scene_repository_h__
 #define __scene_repository_h__
 
-#include "mirfak/core/mirfak_core_export.h"
-#include "mirfak/core/mirfak_core_typedef.h"
+#include "helios/core/helios_core_export.h"
+#include "helios/core/helios_core_typedef.h"
 
 class vtkRenderer;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_CORE_API SceneRepository
+class HELIOS_CORE_API SceneRepository
 {
 public:
 	void addScene(Scene& s);

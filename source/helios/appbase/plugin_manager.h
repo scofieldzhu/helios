@@ -9,9 +9,9 @@
 #include <QPluginLoader>
 #include <QVector>
 #include <QSharedPointer>
-#include "mirfak/appbase/mirfak_appbase_export.h"
+#include "helios/appbase/helios_appbase_export.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 struct PluginRecord 
 {
@@ -30,7 +30,7 @@ struct PluginRecord
     QString err_str;        
 };
 
-class MIRFAK_APPBASE_API PluginManager 
+class HELIOS_APPBASE_API PluginManager 
 {    
 public:    
     void addSearchPath(const QString& dir);

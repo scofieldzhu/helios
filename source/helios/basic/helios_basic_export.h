@@ -1,12 +1,12 @@
 /*******************************************************
-* All Copyright (C) by Sysbot Co. ltd (2022-2026)
+* All Copyright (C) by Sysbot Co. ltd (2025-2025)
 * author: zhucg
-* time:2025/12/18
+* time:2025/3/8
 *******************************************************/
-#ifndef __mirfak_navigation_export_h__
-#define __mirfak_navigation_export_h__
+#ifndef __helios_basic_export_h__
+#define __helios_basic_export_h__
 
-#include "mirfak/mirfak_nsp.h"
+#include "helios/helios_nsp.h"
 
 #if defined(_WIN32) || defined(WIN32) || defined(_WIN64) || defined(WIN64) || defined(_WINDOWS) || defined(_WINDLL) 
     #define PLATFORM_WINDOWS  
@@ -17,15 +17,15 @@
 #endif  
 
 #if defined(PLATFORM_WINDOWS)  
-    #if defined(MIRFAK_NAVIGATION_EXPORTS)  
-        #define MIRFAK_NAVIGATION_API __declspec(dllexport)  
+    #if defined(HELIOS_BASIC_EXPORTS)  
+        #define HELIOS_BASIC_API __declspec(dllexport)  
     #else  
-        #define MIRFAK_NAVIGATION_API __declspec(dllimport)  
+        #define HELIOS_BASIC_API __declspec(dllimport)  
     #endif  
 #elif defined(PLATFORM_LINUX) || defined(PLATFORM_MACOS)  
-    #define MIRFAK_NAVIGATION_API __attribute__((visibility("default")))  
+    #define HELIOS_BASIC_API __attribute__((visibility("default")))  
 #else  
-    #define MIRFAK_NAVIGATION_API  
+    #define HELIOS_BASIC_API  
 #endif 
 
 #endif

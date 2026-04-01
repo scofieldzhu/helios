@@ -6,14 +6,14 @@
 #ifndef __event_translator_h__
 #define __event_translator_h__
 
-#include "mirfak/core/mirfak_core_typedef.h"
+#include "helios/core/helios_core_typedef.h"
 
 class vtkEvent;
 class vtkEventData;
 class vtkCallbackCommand;
 class vtkRenderWindowInteractor;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 class EventTranslator
 {

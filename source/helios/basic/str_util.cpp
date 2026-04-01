@@ -6,7 +6,7 @@
 #include "str_util.h"
 #include <algorithm>
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 std::string TrimString(const std::string& s, std::initializer_list<unsigned char> dirty_chars)  
 {  

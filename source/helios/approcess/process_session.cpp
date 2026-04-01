@@ -6,7 +6,7 @@
 #include "process_session.h"
 #include "process_view_model.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 ProcessSession::ProcessSession(Session* parent)
 	:Session(parent)

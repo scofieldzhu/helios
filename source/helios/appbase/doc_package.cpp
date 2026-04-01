@@ -9,11 +9,11 @@
 #include <QUuid>
 #include "file_zipper.h"
 #include "file_unzipper.h"
-#include "mirfak/appbase/path_util.h"
-#include "mirfak/appbase/default_image_data_serializer.h"
-#include "mirfak/appbase/default_poly_data_serializer.h"
-#include "mirfak/appbase/meta_data_serializer.h"
-#include "mirfak/basic/log_service.h"
+#include "helios/appbase/path_util.h"
+#include "helios/appbase/default_image_data_serializer.h"
+#include "helios/appbase/default_poly_data_serializer.h"
+#include "helios/appbase/meta_data_serializer.h"
+#include "helios/basic/log_service.h"
 
 namespace 
 {    
@@ -44,7 +44,7 @@ namespace
     }
 }
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 DocPackage::DocPackage(std::unique_ptr<MetaDataSerializer> mds, const QString& temp_work_dir, const QString& pwd)
     :kUserPwd_(pwd),
@@ -267,11 +267,11 @@ bool DocPackage::saveModelData(double progress_amount)
         }
         current_filenames.push_back(fn);
     }
-    auto is_locate_func = [&current_filenames](const QString& fn)->bool{
+    auto inside_check_func = [&current_filenames](const QString& fn)->bool{
         return std::find(current_filenames.begin(), current_filenames.end(), fn) != current_filenames.end();
     };    
     for(auto fn : QStringList{GetFileName(kElementFileName, FT_ELEMENT), GetFileName(kVolumeDataFileName, FT_IMAGE)}){
-        if(!is_locate_func(fn)){
+        if(!inside_check_func(fn)){
             SPDLOG_ERROR("Necessary filename:\"{}\" not found!", QStrToLogStr(fn));
             return false;
         }

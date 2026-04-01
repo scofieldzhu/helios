@@ -6,9 +6,9 @@
 #ifndef __tracker_tracking_data_h__
 #define __tracker_tracking_data_h__
 
-#include "mirfak/navigation/tool_tracking_data.h"
+#include "helios/navigation/tool_tracking_data.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 struct TrackerTrackingData
 {    

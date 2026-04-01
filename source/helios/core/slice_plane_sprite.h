@@ -18,7 +18,7 @@ transparency overlay views.
 #ifndef __slice_plane_sprite_h__
 #define __slice_plane_sprite_h__
 
-#include "mirfak/core/sprite.h"
+#include "helios/core/sprite.h"
 
 class vtkPlaneSource;
 class vtkPlane;
@@ -31,9 +31,9 @@ class vtkImageReslice;
 class vtkRenderer;
 class vtkMatrix4x4;
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_CORE_API SlicePlaneSprite : public Sprite
+class HELIOS_CORE_API SlicePlaneSprite : public Sprite
 {
 	SPRITE_DECL(SlicePlaneSprite, Sprite)
 public:

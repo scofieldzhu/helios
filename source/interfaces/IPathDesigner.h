@@ -8,17 +8,17 @@
 #define __IPathDesigner_h__
 
 #include <QObject>
-#include "mirfak/sprites/surgical_path_sprite.h"
+#include "helios/sprites/surgical_path_sprite.h"
 
 class IPathDesigner
 {
 public:
-    virtual void loadPaths(mirfak::SurgicalPathGroup& gp) = 0;
-    virtual mirfak::SurgicalPathGroup* getPathGroup() = 0;
+    virtual void loadPaths(helios::SurgicalPathGroup& gp) = 0;
+    virtual helios::SurgicalPathGroup* getPathGroup() = 0;
     virtual ~IPathDesigner() = default;    
 };
 
-#define IPATH_DESIGNER_IID "mirfak.plugin.IPathDesigner/1.0"
+#define IPATH_DESIGNER_IID "helios.plugin.IPathDesigner/1.0"
 
 Q_DECLARE_INTERFACE(IPathDesigner, IPATH_DESIGNER_IID)
 

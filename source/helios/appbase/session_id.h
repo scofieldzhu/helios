@@ -7,9 +7,9 @@
 #define __session_id_h__
 
 #include <string>
-#include "mirfak/mirfak_nsp.h"
+#include "helios/helios_nsp.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 struct SessionId
 {

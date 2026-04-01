@@ -6,10 +6,10 @@
 #include "session_manager.h"
 //#include <QUuid>
 #include "session.h"
-#include "mirfak/basic/sys_util.h"
-#include "mirfak/basic/log_service.h"
+#include "helios/basic/sys_util.h"
+#include "helios/basic/log_service.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 //std::string GenUuidString()
 //{

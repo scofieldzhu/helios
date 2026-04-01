@@ -10,11 +10,11 @@
 #include <limits>
 #include <string>
 #include <optional>
-#include "mirfak/basic/mirfak_basic_export.h"
+#include "helios/basic/helios_basic_export.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
-class MIRFAK_BASIC_API Color
+class HELIOS_BASIC_API Color
 {
 public:
 	static constexpr int kMinClrFieldInteger = std::numeric_limits<std::uint8_t>::min();

@@ -8,12 +8,12 @@
 #include <vtkObjectFactory.h>
 #include <vtkLookupTable.h>
 #include <vtkImageData.h>
-#include "mirfak/basic/log_service.h"
-#include "mirfak/core/plane_scene.h"
-#include "mirfak/sprites/ortho_planes_sprite.h"
-#include "mirfak/sprites/surface_volume_sprite.h"
+#include "helios/basic/log_service.h"
+#include "helios/core/plane_scene.h"
+#include "helios/sprites/ortho_planes_sprite.h"
+#include "helios/sprites/surface_volume_sprite.h"
 
-MIRFAK_NAMESPACE_BEGIN
+HELIOS_NAMESPACE_BEGIN
 
 vtkStandardNewMacro(WLWEditor);
 
@@ -166,12 +166,12 @@ void WLWEditor::handleMove3DAction()
 //     return false;
 // }
 
-void WLWEditor::setOrthoPlanes(mirfak::OrthoPlanesSprite* ortho_planes)
+void WLWEditor::setOrthoPlanes(helios::OrthoPlanesSprite* ortho_planes)
 {
     orthoplanes_ = ortho_planes;
 }
 
-void WLWEditor::setVolume(mirfak::SurfaceVolumeSprite* v)
+void WLWEditor::setVolume(helios::SurfaceVolumeSprite* v)
 {
     volume_ = v;
 }
