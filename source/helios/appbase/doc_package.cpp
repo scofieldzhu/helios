@@ -6,13 +6,12 @@
 #include <QFileInfo>
 #include <QDir>
 #include <QUuid>
-#include "file_zipper.h"
-#include "file_unzipper.h"
 #include "helios/appbase/path_util.h"
 #include "helios/appbase/default_image_data_serializer.h"
 #include "helios/appbase/default_poly_data_serializer.h"
 #include "helios/appbase/meta_data_serializer.h"
 #include "helios/basic/log_service.h"
+#include "zipper.h"
 
 namespace 
 {    
@@ -307,25 +306,33 @@ QString DocPackage::getAbsDocFilePath(const QString &filename) const
 
 bool DocPackage::decompressFileToDir()const
 {
-    FileUnzipper zf;
-    zf.setZipPath(current_filepath_.toLocal8Bit().toStdString());
-    zf.setPassword(kUserPwd_.toStdString());
-    zf.setDestDir(kDocDir_.toLocal8Bit().toStdString());
-    if(!zf.decompress()){
+    // FileUnzipper zf;
+    // zf.setZipPath(current_filepath_.toLocal8Bit().toStdString());
+    // zf.setPassword(kUserPwd_.toStdString());
+    // zf.setDestDir(kDocDir_.toLocal8Bit().toStdString());
+    // if(!zf.decompress()){
+    //     SPDLOG_ERROR("Package file:\"{}\" cannot resolved!", QStrToLogStr(current_filepath_));
+    //     return false;
+    // }
+    // zf.close();
+    if(!Zipper::DecompressZipFileToDir(kDocDir_.toUtf8().toStdString(), current_filepath_.toUtf8().toStdString(), kUserPwd_.toStdString())){
         SPDLOG_ERROR("Package file:\"{}\" cannot resolved!", QStrToLogStr(current_filepath_));
         return false;
     }
-    zf.close();
     SPDLOG_TRACE("Decompress package file:\"{}\" to dir:\"{}\" successfully!", QStrToLogStr(current_filepath_), QStrToLogStr(kDocDir_));
     return true;
 }
 
 bool DocPackage::compressDirToProjectFile(const QString& doc_dir, const QString& filepath) const
 {
-    FileZipper zf;
-    zf.setZipPath(filepath.toLocal8Bit().data());
-    zf.setPassword(kUserPwd_.toStdString());
-    if(!zf.compressDir(doc_dir.toLocal8Bit().data())){
+    // FileZipper zf;
+    // zf.setZipPath(filepath.toLocal8Bit().data());
+    // zf.setPassword(kUserPwd_.toStdString());
+    // if(!zf.compressDir(doc_dir.toLocal8Bit().data())){
+    //     SPDLOG_ERROR("Compress dir to project file failed! filepath:\"{}\".", QStrToLogStr(filepath));
+    //     return false;
+    // }
+    if(!Zipper::CompressDirToZipFile(filepath.toUtf8().toStdString(), kDocDir_.toUtf8().toStdString(), kUserPwd_.toStdString())){
         SPDLOG_ERROR("Compress dir to project file failed! filepath:\"{}\".", QStrToLogStr(filepath));
         return false;
     }

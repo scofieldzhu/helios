@@ -56,6 +56,8 @@ set(SRC_FILENAME_LIST
     "ortho_planes_sprite.cpp"
     "point_cloud_sprite.cpp"
     "wlw_editor.cpp"
+    "vtkMeshVolumeScalarPicker.h"
+    "vtkMeshVolumeScalarPicker.cxx"
 )
 
 add_library(${LOCAL_PROJ_NAME} SHARED ${EXPORT_FILENAME_LIST} ${SRC_FILENAME_LIST})

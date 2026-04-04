@@ -21,20 +21,9 @@ endif()
 include(CMakeUtility.cmake)
 auto_choose_cxx_standard()
 
-# set(TRD_DIR "D:/TRD_PARTY2")
-# if(EXISTS "${TRD_DIR}")
-#     message(STATUS "Found Third party directory:${TRD_DIR}")
-# else()
-#     message(FATAL_ERROR "Configure Error: Third party directory:${TRD_DIR} not exists!")
-# endif()
-
 set(CMAKE_PREFIX_PATH "${TRD_DIR}" ${CMAKE_PREFIX_PATH})  
 find_package(VTK 9.3.0 REQUIRED)
-if(NOT VTK_FOUND)
-    message(FATAL_ERROR "VTK9.3.0 not found")   
-else()
-    message(STATUS "Found VTK version: ${VTK_VERSION}")   
-endif()
+message(STATUS "Found VTK version: ${VTK_VERSION}")   
 
 foreach(ITEM IN LISTS VTK_LIBRARIES)
     set_target_properties(${ITEM} PROPERTIES
@@ -44,11 +33,7 @@ endforeach()
 
 # provide spdlog package for all projects
 find_package(spdlog CONFIG REQUIRED)
-if(NOT spdlog_FOUND)
-    message(FATAL_ERROR "spdlog not found")   
-else()
-    message(STATUS "Found spdlog version: ${spdlog_VERSION} include dir:${spdlog_INCLUDE_DIRS}")   
-endif()
+message(STATUS "Found spdlog version: ${spdlog_VERSION} include dir:${spdlog_INCLUDE_DIRS}")   
 
 if(TARGET spdlog::spdlog)
     set_target_properties(spdlog::spdlog PROPERTIES
@@ -61,8 +46,7 @@ link_libraries(
 )
 
 add_compile_definitions(
-    $<$<CONFIG:Debug>:SPDLOG_ACTIVE_LEVEL=SPDLOG_LEVEL_TRACE>
-    $<$<CONFIG:RelWithDebInfo>:SPDLOG_ACTIVE_LEVEL=SPDLOG_LEVEL_TRACE>
+    $<$<NOT:$<CONFIG:Release>>:SPDLOG_ACTIVE_LEVEL=SPDLOG_LEVEL_TRACE>
     $<$<CONFIG:Release>:SPDLOG_ACTIVE_LEVEL=SPDLOG_LEVEL_INFO>
 )
 

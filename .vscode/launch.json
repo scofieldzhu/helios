@@ -9,7 +9,13 @@
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
-      "environment": [],
+      "environment": [
+        {
+          "name": "PATH",
+          "value": "${env:Path};C:/Program Files/VTK/bin;"
+        }
+      ],
+      "visualizerFile": "${workspaceFolder}/qt5.natvis",
       "console": "integratedTerminal"
     }
   ]

@@ -15,8 +15,8 @@
 #include <vtkNamedColors.h>
 #include <vtkColorTransferFunction.h>
 #include <vtkPlane.h>
-//#include <vtkMeshVolumeScalarPicker.h>
 #include <vtkVolume.h>
+#include "vtkMeshVolumeScalarPicker.h"
 #include "helios/core/scene.h"
 #include "helios/basic/log_service.h"
 
@@ -117,13 +117,12 @@ Pt3Opt SurfaceVolumeSprite::pickWorldPoint(int x, int y, Scene &s)
     if(!checkConnective(s)){
         return std::nullopt;
     }
-    // vtkNew<vtkMeshVolumeScalarPicker> mvsp;
-    // double p[3];
-    // if(!mvsp->Pick((double)x, (double)y, 0.0, s.getRenderer(), getInput(), getThresholdRange()[0], p)){
-    //     return std::nullopt;
-    // }
-    // return Point3(p);
-    return std::nullopt;
+    vtkNew<vtkMeshVolumeScalarPicker> mvsp;
+    double p[3];
+    if(!mvsp->Pick((double)x, (double)y, 0.0, s.getRenderer(), getInput(), getThresholdRange()[0], p)){
+        return std::nullopt;
+    }
+    return Point3(p);
 }
 
 NAMESPACE_END

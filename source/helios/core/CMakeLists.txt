@@ -50,11 +50,7 @@ set(SRC_FILENAME_LIST
 
 set(CMAKE_AUTOMOC ON)
 find_package(Qt5 REQUIRED COMPONENTS Core Widgets OpenGL) 
-if(Qt5_FOUND)
-    message(STATUS "Found Qt version: ${Qt5_VERSION}")
-else()
-    message(FATAL_ERROR "Configure Error: accquire Qt5 package failed!")
-endif()
+message(STATUS "Found Qt version: ${Qt5_VERSION}")
 
 add_library(${LOCAL_PROJ_NAME} SHARED ${EXPORT_FILENAME_LIST} ${SRC_FILENAME_LIST})
 

@@ -29,10 +29,6 @@ set(EXPORT_FILENAME_LIST
 set(SRC_FILENAME_LIST    
     "default_image_data_serializer.cpp"
     "default_poly_data_serializer.cpp"
-    "file_zipper.h"
-    "file_zipper.cpp"
-    "file_unzipper.cpp"
-    "file_unzipper.h"
     "path_util.cpp"
     "log_misc.cpp"
     "plugin_manager.cpp"    
@@ -43,15 +39,16 @@ set(SRC_FILENAME_LIST
     "resource_util.cpp"
     "task_progressor_ipc_data.h"
     "task_progressor_controller.cpp"
+    "zipper.h"
+    "zipper.cpp"
 )
 
 set(CMAKE_AUTOMOC ON)
 find_package(Qt5 REQUIRED COMPONENTS Core Widgets OpenGL) 
-if(Qt5_FOUND)
-    message(STATUS "Found Qt version: ${Qt5_VERSION}")
-else()
-    message(FATAL_ERROR "Configure Error: accquire Qt5 package failed!")
-endif()
+message(STATUS "Found Qt version: ${Qt5_VERSION}")
+
+find_package(libzip CONFIG REQUIRED)
+message(STATUS "Found libzip!")
 
 add_library(${LOCAL_PROJ_NAME} SHARED ${SRC_FILENAME_LIST} ${EXPORT_FILENAME_LIST})
 
@@ -68,13 +65,13 @@ target_compile_definitions(${LOCAL_PROJ_NAME} PUBLIC
 set_proj_utf8_charset(${LOCAL_PROJ_NAME})
 
 target_link_libraries(${LOCAL_PROJ_NAME} PRIVATE 
-    zlibwapi
     ${VTK_LIBRARIES} 
     "${PROJ_NAME}_basic"
     "${PROJ_NAME}_core"
     "${PROJ_NAME}_sprites"
     Qt5::Core 
     Qt5::OpenGL
+    libzip::zip
 )
 
 set_target_properties(${LOCAL_PROJ_NAME} PROPERTIES
