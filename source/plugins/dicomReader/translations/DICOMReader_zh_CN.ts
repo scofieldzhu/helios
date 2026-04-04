@@ -4,92 +4,92 @@
 <context>
     <name>DICOMReaderDlg</name>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="128"/>
+        <location filename="../dicomReaderDlg.cpp" line="127"/>
         <source>Reading dicom data dialog</source>
         <translation>读取图像</translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="132"/>
+        <location filename="../dicomReaderDlg.cpp" line="131"/>
         <source>Patient Name</source>
         <translation>病人名称</translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="133"/>
+        <location filename="../dicomReaderDlg.cpp" line="132"/>
         <source>Patient ID</source>
         <translation>病人ID</translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="134"/>
+        <location filename="../dicomReaderDlg.cpp" line="133"/>
         <source>Birth Date</source>
         <translation>出生日期</translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="135"/>
+        <location filename="../dicomReaderDlg.cpp" line="134"/>
         <source>Sex</source>
         <translation>性别</translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="136"/>
+        <location filename="../dicomReaderDlg.cpp" line="135"/>
         <source>Studies</source>
         <translation>检查数</translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="137"/>
+        <location filename="../dicomReaderDlg.cpp" line="136"/>
         <source>Last Study Date</source>
         <translation>最后一次检查日期</translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="147"/>
+        <location filename="../dicomReaderDlg.cpp" line="146"/>
         <source>Study Date</source>
         <translation>检查日期</translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="148"/>
+        <location filename="../dicomReaderDlg.cpp" line="147"/>
         <source>Study ID</source>
         <translation>检查ID</translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="149"/>
+        <location filename="../dicomReaderDlg.cpp" line="148"/>
         <source>Study Description</source>
         <translation>检查描述</translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="150"/>
+        <location filename="../dicomReaderDlg.cpp" line="149"/>
         <source>Series</source>
         <translation>序列</translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="160"/>
+        <location filename="../dicomReaderDlg.cpp" line="159"/>
         <source>Series #</source>
         <translation>序列ID</translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="161"/>
+        <location filename="../dicomReaderDlg.cpp" line="160"/>
         <source>Series Description</source>
         <translation>序列描述</translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="162"/>
+        <location filename="../dicomReaderDlg.cpp" line="161"/>
         <source>Modality</source>
         <translation>模态</translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="163"/>
+        <location filename="../dicomReaderDlg.cpp" line="162"/>
         <source>Size</source>
         <translation>大小</translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="164"/>
+        <location filename="../dicomReaderDlg.cpp" line="163"/>
         <source>Count</source>
         <translation>数量</translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="342"/>
+        <location filename="../dicomReaderDlg.cpp" line="341"/>
         <source>Load</source>
         <translation>加载</translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="343"/>
+        <location filename="../dicomReaderDlg.cpp" line="342"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>

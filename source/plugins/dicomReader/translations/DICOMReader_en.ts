@@ -4,92 +4,92 @@
 <context>
     <name>DICOMReaderDlg</name>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="128"/>
+        <location filename="../dicomReaderDlg.cpp" line="127"/>
         <source>Reading dicom data dialog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="132"/>
+        <location filename="../dicomReaderDlg.cpp" line="131"/>
         <source>Patient Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="133"/>
+        <location filename="../dicomReaderDlg.cpp" line="132"/>
         <source>Patient ID</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="134"/>
+        <location filename="../dicomReaderDlg.cpp" line="133"/>
         <source>Birth Date</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="135"/>
+        <location filename="../dicomReaderDlg.cpp" line="134"/>
         <source>Sex</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="136"/>
+        <location filename="../dicomReaderDlg.cpp" line="135"/>
         <source>Studies</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="137"/>
+        <location filename="../dicomReaderDlg.cpp" line="136"/>
         <source>Last Study Date</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="147"/>
+        <location filename="../dicomReaderDlg.cpp" line="146"/>
         <source>Study Date</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="148"/>
+        <location filename="../dicomReaderDlg.cpp" line="147"/>
         <source>Study ID</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="149"/>
+        <location filename="../dicomReaderDlg.cpp" line="148"/>
         <source>Study Description</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="150"/>
+        <location filename="../dicomReaderDlg.cpp" line="149"/>
         <source>Series</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="160"/>
+        <location filename="../dicomReaderDlg.cpp" line="159"/>
         <source>Series #</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="161"/>
+        <location filename="../dicomReaderDlg.cpp" line="160"/>
         <source>Series Description</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="162"/>
+        <location filename="../dicomReaderDlg.cpp" line="161"/>
         <source>Modality</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="163"/>
+        <location filename="../dicomReaderDlg.cpp" line="162"/>
         <source>Size</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="164"/>
+        <location filename="../dicomReaderDlg.cpp" line="163"/>
         <source>Count</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="342"/>
+        <location filename="../dicomReaderDlg.cpp" line="341"/>
         <source>Load</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../dicomReaderDlg.cpp" line="343"/>
+        <location filename="../dicomReaderDlg.cpp" line="342"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
